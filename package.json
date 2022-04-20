@@ -1,6 +1,6 @@
 {
-  "name": "tailwind-nextjs-starter-blog",
-  "version": "1.0.0-canary.1",
+  "name": "kapil-blog",
+  "version": "1",
   "private": true,
   "scripts": {
     "start": "PORT=3434 next-remote-watch ./data",
