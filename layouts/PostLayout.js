@@ -9,6 +9,7 @@ import Tag from '@/components/Tag'
 import Twemoji from '@/components/Twemoji.js'
 import siteMetadata from '@/data/siteMetadata'
 import SocialButtons from '@/components/SocialButtons'
+
 const headingColorClass =
     'bg-gradient-to-r from-yellow-600 to-red-600 dark:bg-gradient-to-l dark:from-emerald-500 dark:to-lime-600'
 const postDateTemplate = { year: 'numeric', month: 'short', day: 'numeric' }
@@ -93,7 +94,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, pag
                         )}
                         <dl className="text-sm font-medium leading-5 whitespace-nowrap">
                           <dt className="sr-only">Name</dt>
-                          <dd className="text-gray-900 dark:text-gray-100 mb-0.5">{author.name}</dd>
+                          <dd className="font-medium background-author-animate bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-clip-text text-transparent mb-0.5">{author.name}</dd>
                           <dt className="sr-only">Twitter</dt>
                           <dd>
                             {author.github && (
@@ -142,7 +143,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, pag
                     </div>
                   </div>
                 )}
-                {/* {(next || prev) && (
+                 {(next || prev) && (
                   <div className="flex justify-between py-4 xl:block xl:space-y-8 xl:py-8">
                     {prev && (
                       <div>
@@ -169,7 +170,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, pag
                       </div>
                     )}
                   </div>
-                )} */}
+                )}
               </div>
             </footer>
           </div>

@@ -10,7 +10,6 @@ import Twemoji from '@/components/Twemoji'
 export default function PostLayout({ frontMatter, children }) {
   const { date, title, slug, fileName } = frontMatter
   const postUrl = `${siteMetadata.siteUrl}/snippets/${slug}`
-
   return (
     <SectionContainer>
       <BlogSeo url={`${siteMetadata.siteUrl}/snippets/${frontMatter.slug}`} {...frontMatter} />

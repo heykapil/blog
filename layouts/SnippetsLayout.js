@@ -1,5 +1,4 @@
 import SnippetCard from '@/components/SnippetCard'
-
 export default function SnippetsLayout({ title, snippets }) {
   return (
     <>
