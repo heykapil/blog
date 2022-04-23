@@ -31,7 +31,7 @@ export default function NowPlaying() {
             </div>
           </>
         ) : (
-          <p className="text-gray-200 font-medium truncate">Not Playing</p>
+          <p className="text-gray-800 dark:text-gray-200 font-medium truncate">Not Playing</p>
         )}
          <span className="hidden group-hover:block mx-2 text-gray-800 dark:text-gray-200">{' – '}</span>
          <p className="hidden group-hover:block text-gray-800 dark:text-gray-200 max-w-max"> {data?.artist ?? 'Spotify'}</p>
