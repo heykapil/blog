@@ -38,10 +38,10 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, pag
               <dl className="space-y-10">
                 <div>
                   <dt className="sr-only">Published on</dt>
-                  <dd className="flex justify-center items-center text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
+                  <dd className="flex justify-center items-center bg-clip-text text-transparent bg-gradient-to-r from-yellow-600 to-red-600 dark:bg-gradient-to-l dark:from-emerald-500 dark:to-lime-600">
                     <time dateTime={date} className="flex items-center">
                       <Twemoji emoji="calendar" size="" />
-                      <span className="ml-1.5 bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500">{new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
+                      <span className="ml-1.5 bg-clip-text text-transparent bg-gradient-to-r from-yellow-600 to-red-600 dark:bg-gradient-to-l dark:from-emerald-500 dark:to-lime-600">{new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
                       </span>
                     </time>
                     <span className="mx-2">-</span>
@@ -94,7 +94,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, pag
                         )}
                         <dl className="text-sm font-medium leading-5 whitespace-nowrap">
                           <dt className="sr-only">Name</dt>
-                          <dd className="font-medium background-author-animate bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-clip-text text-transparent mb-0.5">{author.name}</dd>
+                          <dd className="font-medium text-primary-500 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 mb-0.5">{author.name}</dd>
                           <dt className="sr-only">Twitter</dt>
                           <dd>
                             {author.github && (
