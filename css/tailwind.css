@@ -2,13 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-code,
-kbd,
-pre,
-samp {
-  font-family: 'JetBrains Mono', monospace;
-}
-
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -50,17 +43,4 @@ html.lightbox-loading * {
 
 .prose ol li:before {
   background-color: transparent !important;
-}
-
-.prose .code-line {
-  font-size: 16px;
-}
-
-.prose-lg hr {
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
-
-* {
-  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }

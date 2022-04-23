@@ -9,7 +9,7 @@ import Twemoji from './Twemoji.js'
 
 Custom hooks to use an async effect
 
-```js
+```js {1,3-4} showLineNumbers
 function useAsync(asyncCallback) {
   const [state, dispatch] = React.useReducer(asyncReducer)
 
