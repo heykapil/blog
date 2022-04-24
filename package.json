@@ -17,6 +17,7 @@
     "antd": "^4.19.5",
     "autoprefixer": "^10.2.5",
     "esbuild": "^0.12.16",
+    "firebase-admin": "^10.1.0",
     "gray-matter": "^4.0.2",
     "image-size": "1.0.0",
     "isomorphic-unfetch": "^3.1.0",
