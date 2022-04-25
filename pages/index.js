@@ -24,7 +24,7 @@ export default function Home({ posts }) {
   return (
     <>
       <PageSeo title={siteMetadata.title} description={siteMetadata.description} />
-      <div className="divide-y divide-gray-200 dark:divide-gray-700 mt-8 md:mt-16">
+      <div className=" divide-gray-200 dark:divide-gray-700 mt-8 md:mt-16">
         <div className="my-4 pt-6 pb-8 space-y-2 md:space-y-5 xl:grid xl:grid-cols-3 gap-12">
         <div className="xl:col-span-1 col-auto">
          <Hero />
@@ -48,7 +48,7 @@ export default function Home({ posts }) {
             </div>
           </div>
         </div>
-        <div className="pb-2 w-full flex flex-wrap">
+        <div className="pb-2 w-full flex flex-wrap mx-auto">
             <CardNoBG
               title='Research'
               description='Know more about my interests and published papers.'
@@ -75,10 +75,13 @@ export default function Home({ posts }) {
             />
           </div>
           </div>
-          <p className="my-8">
-                Recent Post. Happy Reading <Twemoji emoji="clinking-beer-mugs" />
-              </p>
-      <div className="border-t border-gray-200 dark:border-gray-700">
+          <div className="border-t border-gray-200 dark:border-gray-700">
+          <h2 className="font-bold text-3xl tracking-tight mb-4 mt-16 text-black dark:text-white">
+          Latest Posts
+        </h2>
+        <p className="text-gray-600 dark:text-gray-400 mb-4">
+          Curious what I've written? Here're my top posts written on this blog.
+        </p>
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {

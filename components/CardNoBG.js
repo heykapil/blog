@@ -32,7 +32,7 @@ const CardNoBG = ({
       <div
         className={`rounded-md ${
           onlyImg ? 'p-0.5' : 'p-0.5 dark:p-px'
-        } h-full -z-10 border dark:hover:border-gray-400 dark:border-gray-600 border-gray-400 hover:border-gray-500 rounded-md border-opacity-60`}
+        } h-full -z-10 border dark:hover:border-pink-500 dark:border-yellow-200 border-fuchsia-400 hover:border-pink-500 rounded-md border-opacity-70`}
       >
         <Link href={href} aria-label={`Link to ${title}`}>
           <animated.div

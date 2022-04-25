@@ -78,7 +78,7 @@ module.exports = {
         yellow: colors.amber,
         purple: colors.violet,
         gray: colors.neutral,
-        dark: '#010101',
+        dark: '#111111',
         code: {
           green: '#b5f4a5',
           yellow: '#ffe484',
