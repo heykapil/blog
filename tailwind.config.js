@@ -3,7 +3,6 @@ const plugin = require('tailwindcss/plugin')
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  mode: 'jit',
   content: [
     './pages/**/*.js',
     './data/blog/*.mdx',
@@ -61,7 +60,7 @@ module.exports = {
         'dark-pattern': "url('/static/images/dark-pattern.jpeg')",
       },
       fontFamily: {
-        sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        sans: ['Be Vietnam Pro', ...defaultTheme.fontFamily.sans],
       },
       gradientColorStops: {
         // https://coolors.co/2d00f7-6a00f4-8900f2-a100f2-b100e8-bc00dd-d100d1-db00b6-e500a4-f20089
@@ -79,7 +78,6 @@ module.exports = {
         yellow: colors.amber,
         purple: colors.violet,
         gray: colors.neutral,
-        dark: '#180F3A',
         code: {
           green: '#b5f4a5',
           yellow: '#ffe484',
@@ -327,9 +325,6 @@ module.exports = {
         "gradient-foreground-3": "gradient-foreground-3 8s infinite",
       },
     },
-  },
-  variants: {
-    typography: ['dark'],
   },
   plugins: [
     require('@tailwindcss/forms'),
