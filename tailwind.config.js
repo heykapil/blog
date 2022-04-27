@@ -78,7 +78,7 @@ module.exports = {
         yellow: colors.amber,
         purple: colors.violet,
         gray: colors.neutral,
-        dark: 'linear-gradient(rgb(17, 24, 39), rgb(75, 85, 99))',
+        dark: '#180F3A',
         code: {
           green: '#b5f4a5',
           yellow: '#ffe484',
