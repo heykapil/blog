@@ -57,7 +57,8 @@ module.exports = {
         14: '3.5rem',
       },
       backgroundImage: {
-        'texture-pattern': "url('/static/images/right-dark-gradient.svg')",
+        'light-pattern': "url('/static/images/right-dark-gradient.svg')",
+        'dark-pattern': "url('/static/images/dark-pattern.jpg')",
       },
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
