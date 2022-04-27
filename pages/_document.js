@@ -24,7 +24,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
         </Head>
-        <body className="antialiased text-black bg-white dark:bg-dark dark:text-white">
+        <body className="bg-light-pattern antialiased text-black dark:bg-dark-pattern dark:text-white">
           <Main />
           <NextScript />
         </body>
