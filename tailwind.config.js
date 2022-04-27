@@ -3,7 +3,6 @@ const plugin = require('tailwindcss/plugin')
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  mode: 'jit',
   content: [
     './pages/**/*.js',
     './data/blog/*.mdx',
@@ -78,7 +77,6 @@ module.exports = {
         yellow: colors.amber,
         purple: colors.violet,
         gray: colors.neutral,
-        dark: '#111111',
         code: {
           green: '#b5f4a5',
           yellow: '#ffe484',
@@ -326,9 +324,6 @@ module.exports = {
         "gradient-foreground-3": "gradient-foreground-3 8s infinite",
       },
     },
-  },
-  variants: {
-    typography: ['dark'],
   },
   plugins: [
     require('@tailwindcss/forms'),
