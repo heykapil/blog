@@ -58,7 +58,7 @@ module.exports = {
       },
       backgroundImage: {
         'light-pattern': "url('/static/images/right-dark-gradient.svg')",
-        'dark-pattern': "url('/static/images/dark-pattern.jpg')",
+        'dark-pattern': "url('/static/images/dark-pattern.jpeg')",
       },
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
