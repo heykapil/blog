@@ -17,9 +17,7 @@ export default function Footer() {
           <SocialIcon kind="twitter" href={siteMetadata.twitter} />
         </div>
         <div className="background-author-animate mb-2 flex space-x-2 bg-gradient-to-r from-red-500 via-purple-500 to-yellow-500 bg-clip-text text-base font-semibold text-transparent">
-          <div>{siteMetadata.author}</div>
-          <div>{`|`}</div>
-          <div>{`Have a good {currentDayName()}!`}</div>
+          <div>{siteMetadata.author} | {`Have a good {currentDayName()}!`}</div>
         </div>
         <div className="mb-3 flex">
           <NowPlaying />
