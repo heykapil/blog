@@ -16,6 +16,7 @@ const siteMetadata = {
   github: 'https://github.com/heykapil',
   twitter: 'https://twitter.com/kapiljch',
   facebook: 'https://facebook.com/kapiljch',
+  instagram: 'https://instagram.com/kapiljch',
   youtube: '',
   linkedin: '',
   locale: 'en-US',
