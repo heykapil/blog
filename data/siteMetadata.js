@@ -7,8 +7,8 @@ const siteMetadata = {
     "Kapil's blog - research, teaching and life experience",
   snippets: 'Code snippets collected by Kapil',
   language: 'en-us',
-  siteUrl: 'https://www.heykapil.vercel.app',
-  siteRepo: 'https://github.com/heykapil/leo-blog',
+  siteUrl: 'https://heykapil.vercel.app',
+  siteRepo: 'https://github.com/heykapil/blog',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/logo.png',
   socialBanner: '/static/images/logo.png',
@@ -70,7 +70,7 @@ const siteMetadata = {
     },
   },
   socialAccount: {
-    twitter: 'hta218_',
+    twitter: 'kapiljch',
   },
 }
 

@@ -81,7 +81,7 @@ export default function Home({ posts }) {
           Latest Posts
         </h2>
         <p className="text-gray-600 dark:text-gray-400 mb-4">
-          You can find the latest blog articles written by me arranged in date wise.
+          You can find the latest blog articles written by me arranged date wise.
         </p>
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}

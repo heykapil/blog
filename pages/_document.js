@@ -23,12 +23,7 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"
             rel="stylesheet"
           />
-          <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css"
-      integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc"
-      crossOrigin="anonymous"
-    />
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.3/katex.min.css" integrity="sha512-07YhC3P4/vS5HdgGuNAAeIxb5ee//efgRNo5AGdMtqFBUPYOdQG/sDK0Nl5qNq94kdEk/Pvu8pmN4GYUeucUkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         </Head>
         <body className="antialiased text-black dark:text-white">
           <Main />

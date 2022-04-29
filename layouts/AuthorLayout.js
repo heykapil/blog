@@ -14,7 +14,7 @@ export default function AuthorLayout({ children, frontMatter }) {
           </h1>
         </div>
         <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:space-y-0 pt-8">
-          <ProfileCard avatar={avatar} />
+        {/*  <ProfileCard avatar={avatar} /> */}
           <div className="pb-8 xl:pl-8 prose prose-lg dark:prose-dark max-w-none xl:col-span-2">
             {children}
           </div>
