@@ -95,7 +95,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, pag
                         <dl className="text-sm font-medium leading-5 whitespace-nowrap">
                           <dt className="sr-only">Name</dt>
                           <dd className="font-medium text-primary-500 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 mb-0.5">{author.name}</dd>
-                          <dt className="sr-only">Twitter</dt>
+                          <dt className="sr-only">Github</dt>
                           <dd>
                             {author.github && (
                               <>

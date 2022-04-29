@@ -23,8 +23,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
             {title}
           </h1>
           <p className="mb-4 text-gray-600 dark:text-gray-400">
-          {`I've been writing online since 2014, mostly about web development and tech careers.
-            In total, I've written many articles on my blog.
+          {`I've always wished to have a personal space where i can pen down things. So, I've started writing online since 2022, mostly about personal life, web development, research and courses that i've taught . I've written many articles on my blog.
             Use the search below to filter by title.`}
         </p>
           <div className="relative w-full">

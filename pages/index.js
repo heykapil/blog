@@ -48,7 +48,7 @@ export default function Home({ posts }) {
             </div>
           </div>
         </div>
-        <div className="pb-2 w-full flex flex-wrap mx-auto">
+        {/* <div className="pb-2 w-full flex flex-wrap mx-auto">
             <CardNoBG
               title='Research'
               description='Know more about my interests and published papers.'
@@ -73,14 +73,15 @@ export default function Home({ posts }) {
               href={'/about'}
               className="py-4 md:px-4"
             />
-          </div>
+            </div>
+          */}
           </div>
           <div className="border-t border-gray-200 dark:border-gray-700">
           <h2 className="font-bold text-3xl tracking-tight mb-4 mt-16 text-black dark:text-white">
           Latest Posts
         </h2>
         <p className="text-gray-600 dark:text-gray-400 mb-4">
-          Curious what I've written? Here're my top posts written on this blog.
+          You can find the latest blog articles written by me arranged in date wise.
         </p>
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
