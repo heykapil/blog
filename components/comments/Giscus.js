@@ -1,21 +1,23 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState , useCallback } from 'react'
 import { useTheme } from 'next-themes'
 
 import siteMetadata from '@/data/siteMetadata'
 
-const Giscus = ({ mapping }) => {
+const Giscus = () => {
   const [enableLoadComments, setEnabledLoadComments] = useState(true)
   const { theme, resolvedTheme } = useTheme()
+  const commentsTheme =
+    siteMetadata.comment.giscusConfig.themeURL === ''
+      ? theme === 'dark' || resolvedTheme === 'dark'
+        ? siteMetadata.comment.giscusConfig.darkTheme
+        : siteMetadata.comment.giscusConfig.theme
+      : siteMetadata.comment.giscusConfig.themeURL
+
   const COMMENTS_ID = 'comments-container'
 
-  useEffect(() => {
-    const commentsTheme =
-      siteMetadata.comment.giscusConfig.themeURL === ''
-        ? theme === 'dark' || resolvedTheme === 'dark'
-          ? siteMetadata.comment.giscusConfig.darkTheme
-          : siteMetadata.comment.giscusConfig.theme
-        : siteMetadata.comment.giscusConfig.themeURL
-
+  const LoadComments = useCallback(() => {
+    setEnabledLoadComments(false)
+      
     // setEnabledLoadComments(false)
     const script = document.createElement('script')
     script.src = 'https://giscus.app/client.js'
@@ -41,7 +43,8 @@ const Giscus = ({ mapping }) => {
 
   return (
     <div className="pt-6 pb-6 text-center text-gray-700 dark:text-gray-300">
-      <div className="giscus" id={COMMENTS_ID} />
+    {enableLoadComments && <button onClick={LoadComments}>Load Comments</button>}
+    <div className="giscus" id={COMMENTS_ID} />
     </div>
   )
 }
