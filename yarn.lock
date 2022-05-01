@@ -1085,6 +1085,11 @@
   dependencies:
     tslib "^2.1.0"
 
+"@fontsource/be-vietnam-pro@^4.5.6":
+  version "4.5.6"
+  resolved "https://registry.yarnpkg.com/@fontsource/be-vietnam-pro/-/be-vietnam-pro-4.5.6.tgz#ae0eae4f55aed0b71a8dac53f590315ead4d55a1"
+  integrity sha512-jUCx1QLzdNSo3Q36s2e9Qio88NzltQjUu2CDdkEcAXSOOiCCiyz3opMiWo9RK2qUaW7C4bCHAukGb8tYw1ygWg==
+
 "@google-cloud/firestore@^4.15.1":
   version "4.15.1"
   resolved "https://registry.yarnpkg.com/@google-cloud/firestore/-/firestore-4.15.1.tgz#ed764fc76823ce120e68fe8c27ef1edd0650cd93"

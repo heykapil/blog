@@ -1,3 +1,5 @@
+import 'katex/dist/katex.css'
+import "@fontsource/be-vietnam-pro"
 import '@/css/extra.css'
 import '@/css/prism.css'
 import '@/css/tailwind.css'
@@ -11,7 +13,7 @@ import LayoutWrapper from '@/components/LayoutWrapper'
 import Extra from '@/components/Extra'
 import NProgress from 'nprogress';
 
-NProgress.configure({ showSpinner: true });
+NProgress.configure({ showSpinner: false });
 
 Router.onRouteChangeStart = () => {
   // console.log('onRouteChangeStart triggered');
