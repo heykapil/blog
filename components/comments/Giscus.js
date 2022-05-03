@@ -40,6 +40,12 @@ const Giscus = () => {
       if (comments) comments.innerHTML = ''
     }
   }, [theme, resolvedTheme])
+  // Reload on theme change
+  useEffect(() => {
+    const iframe = document.querySelector('iframe.giscus-frame')
+    if (!iframe) return
+    LoadComments()
+  }, [LoadComments])
 
   return (
     <div className="pt-6 pb-6 text-center text-gray-700 dark:text-gray-300">
