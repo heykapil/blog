@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@fontsource/be-vietnam-pro": "^4.5.6",
+    "@fontsource/ibm-plex-sans": "latest",
     "@tailwindcss/forms": "^0.4.0",
     "@tailwindcss/typography": "^0.5.1",
     "antd": "^4.19.5",
