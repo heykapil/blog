@@ -1,7 +1,8 @@
 const headerNavLinks = [
   { href: '/', title: 'Home'},
   { href: '/blog', title: 'Blog' },
-  { href: '/toptracks', title: 'Top Tracks' },
+  { href: 'https://gallery.heykapil.in', title: 'Gallery' },
+  { href: '/toptracks', title: 'Spotify' },
   { href: '/resume', title: 'Resume' },
 ]
 
