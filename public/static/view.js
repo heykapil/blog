@@ -1,5 +1,9 @@
+const previewConfig = {
+   showDownloadPDF: true,
+   showPageControls: true
+}
 document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
-		var adobeDCView = new AdobeDC.View({clientId: "432a6f34caa24103815ebb8b12751934"});
+		var adobeDCView = new AdobeDC.View({clientId: "a6927ed0ae534212b7f5ecfb67e619fe"});
 		adobeDCView.previewFile({
 			content:{location: {url: "https://documentcloud.adobe.com/view-sdk-demo/PDFs/Bodea Brochure.pdf"}},
 			metaData:{fileName: "Bodea Brochure.pdf"}
