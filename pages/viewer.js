@@ -1,8 +1,6 @@
-import Script from 'next/script'
+import Head from 'next/head'
 export default function Viewer() {
   return (
     <div id="adobe-dc-view"></div>
-    <script type="text/javascript" src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-    <script type="text/javascript" src="./static/view.js"></script>
-  )
+   )
 }
