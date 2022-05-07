@@ -13,8 +13,6 @@ class MyDocument extends Document {
           <meta name="theme-color" content="#000000" />
           <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
           <script src="/static/extra.js" />
-          <script type="text/javascript" src="https://documentcloud.adobe.com/view-sdk/main.js" />
-          <script type="text/javascript" src="./static/view.js" />
           {/*<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
           <link
             href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;300;400;600;700;800&display=swap"
