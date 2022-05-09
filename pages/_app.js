@@ -1,5 +1,4 @@
 import 'katex/dist/katex.css'
-import "@fontsource/ibm-plex-sans"
 import '@/css/extra.css'
 import '@/css/prism.css'
 import '@/css/tailwind.css'
