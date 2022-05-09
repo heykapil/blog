@@ -39,7 +39,7 @@ export default function App({ Component, pageProps }) {
       <Analytics />
       <LayoutWrapper>
         <Component {...pageProps} />
-      </LayoutWrapper>
+        </LayoutWrapper>
       <Extra />
     </ThemeProvider>
   )

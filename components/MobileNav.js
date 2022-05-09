@@ -22,7 +22,7 @@ const MobileNav = ({ navShow, onToggleNav }) => {
               <Link
                 href={link.href}
                 title={link.title}
-                className="text-xl font-semibold leading-8 tracking-wide text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white"
+                className="border-b border-gray-400 dark:border-gray-600 text-gray-700 dark:text-gray-300 text-xl font-semibold leading-8 tracking-wide hover:text-black dark:hover:text-white"
                 onClick={onToggleNav}
               >
                 {link.title}
