@@ -1021,15 +1021,15 @@
   resolved "https://registry.npmjs.org/@fal-works/esbuild-plugin-global-externals/-/esbuild-plugin-global-externals-2.1.2.tgz"
   integrity sha512-cEee/Z+I12mZcFJshKcCqC8tuX5hG3s+d+9nZ3LabqKF1vKdF41B92pJVCBggjAGORAeOzyyDDKrZwIkLffeOQ==
 
-"@fontsource/be-vietnam-pro@^4.5.6":
-  version "4.5.6"
-  resolved "https://registry.yarnpkg.com/@fontsource/be-vietnam-pro/-/be-vietnam-pro-4.5.6.tgz#ae0eae4f55aed0b71a8dac53f590315ead4d55a1"
-  integrity sha512-jUCx1QLzdNSo3Q36s2e9Qio88NzltQjUu2CDdkEcAXSOOiCCiyz3opMiWo9RK2qUaW7C4bCHAukGb8tYw1ygWg==
+"@fontsource/alegreya-sans@^4.5.8":
+  version "4.5.8"
+  resolved "https://registry.yarnpkg.com/@fontsource/alegreya-sans/-/alegreya-sans-4.5.8.tgz#acf1ed814a7ecb4bff13ee5b305125fd05a17b0f"
+  integrity sha512-+wateZ0x/gG9miEY3U0iCYDteEMM7eMgrV9LmpD1wxP+7/XWFQ+189ZmlNCnmpNSfDWZcCMSsjU/vWbbLpgcmA==
 
-"@fontsource/ibm-plex-sans@latest":
-  version "4.5.10"
-  resolved "https://registry.yarnpkg.com/@fontsource/ibm-plex-sans/-/ibm-plex-sans-4.5.10.tgz#5df4040f791fb8bf1d9a6d6b0171eadec2d8a07a"
-  integrity sha512-iXTnQSCeLXFZz8LEkoSlYuGGXbM35l4GdXYr88rH9WYXkhw4X1TF1+wOiXWgPWqdMZK8HNSFZHcF8JCdGnqBBA==
+"@fontsource/crimson-pro@^4.5.8":
+  version "4.5.8"
+  resolved "https://registry.yarnpkg.com/@fontsource/crimson-pro/-/crimson-pro-4.5.8.tgz#853928b9052392fd424d826c8485c7993f687515"
+  integrity sha512-nhFZj0GdGT6ZCmGiRFBxRpNW9djuxEDmlIqfB4aDdEw+8wmxC348T2WDL8YYpurYXorw5MxicpdEfpPwLmdcBQ==
 
 "@humanwhocodes/config-array@^0.9.2":
   version "0.9.5"

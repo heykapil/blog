@@ -179,16 +179,16 @@ module.exports = {
             },
             h1: {
               fontWeight: '700',
-              letterSpacing: theme('letterSpacing.tight'),
+              letterSpacing: theme('letterSpacing.wide'),
               color: theme('colors.gray.100'),
             },
             h2: {
-              fontWeight: '700',
-              letterSpacing: theme('letterSpacing.tight'),
+              fontWeight: '600',
+              letterSpacing: theme('letterSpacing.wide'),
               color: theme('colors.gray.100'),
             },
             h3: {
-              fontWeight: '600',
+              fontWeight: '500',
               color: theme('colors.gray.100'),
             },
             'h4,h5,h6': {
