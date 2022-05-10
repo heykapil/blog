@@ -16,7 +16,7 @@ const LayoutWrapper = ({ children }) => {
       <header className="overflow-x-hidden backdrop-blur supports-backdrop-blur:bg-white/95 py-3 sticky top-0 z-40 bg-white/75 dark:bg-dark/75">
         <div className="mx-auto max-w-3xl xl:max-w-5xl flex items-center justify-between px-3 xl:px-0">
           <div>
-            <Link href="/" aria-label="Leo's Blog">
+            <Link href="/" aria-label="hello kapil">
               <div className="flex items-center justify-between">
                 <div className="mr-3 flex justify-center items-center">
                   <NextImage
@@ -35,7 +35,7 @@ const LayoutWrapper = ({ children }) => {
                 <Link
                   key={link.title}
                   href={link.href}
-                  className="p-1 font-medium text-gray-900 sm:p-4 dark:text-gray-100"
+                  className="p-1 font-medium text-gray-900 sm:p-4 dark:text-gray-100 link-underline link-underline-black"
                 >
                   {link.title}
                 </Link>

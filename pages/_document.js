@@ -4,13 +4,13 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-        <link
+          <link
           rel="preload"
           href="/font/ibm/ibm-plex-sans-var.woff2"
           as="font"
           type="font/woff2"
           crossOrigin="anonymous"
-        />
+          />
           <link rel="apple-touch-icon" sizes="76x76" href="/static/favicons/hat.png" />
           <link rel="icon" type="image/png" sizes="32x32" href="/static/favicons/hat.png" />
           <link rel="icon" type="image/jpg" sizes="16x16" href="/static/favicons/hat.jpg" />
