@@ -15,8 +15,9 @@ const SocialButtons = ({ postUrl, title, fileName }) => {
           {'Discuss on Twitter'}
         </Link>
         {` • `}
-        <Link href={editUrl(fileName)}>{'View on GitHub'}</Link>
+        <Link href={editUrl(fileName)}>{'Edit on GitHub'}</Link>
       </div>
+      {/*
       <div className="flex items-center">
         <TwitterShareButton
           url={postUrl}
@@ -35,7 +36,7 @@ const SocialButtons = ({ postUrl, title, fileName }) => {
           <FacebookIcon className="w-5 h-5" fill="#fff" />
           <span className="ml-2.5 mr-1.5 font-extrabold text-white">Share</span>
         </FacebookShareButton>
-      </div>
+       </div> */}
     </div>
   )
 }

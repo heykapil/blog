@@ -28,99 +28,52 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, pag
     <SectionContainer>
       <BlogSeo url={postUrl} authorDetails={authorDetails} {...frontMatter} />
       <ScrollTop />
-      <article>
-        <div className="">
-          <header className="pt-6 xl:py-16">
-            <div className="space-y-4 md:space-y-2 text-center">
-              <div>
-                <PageTitle><span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-600 to-red-600 dark:bg-gradient-to-l dark:from-emerald-500 dark:to-lime-600"> {title} </span></PageTitle>
-              </div>
-              <dl className="space-y-10">
-                <div>
-                  <dt className="sr-only">Published on</dt>
-                  <dd className="flex justify-center items-center bg-clip-text text-transparent bg-gradient-to-r from-yellow-600 to-red-600 dark:bg-gradient-to-l dark:from-emerald-500 dark:to-lime-600">
-                    <time dateTime={date} className="flex items-center">
-                      <Twemoji emoji="calendar" size="" />
-                      <span className="ml-1.5 bg-clip-text text-transparent bg-gradient-to-r from-yellow-600 to-red-600 dark:bg-gradient-to-l dark:from-emerald-500 dark:to-lime-600">{new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
-                      </span>
-                    </time>
-                    <span className="mx-2">-</span>
-                    <div className="flex items-center">
-                      <Twemoji emoji="hourglass-not-done" size="" />
-                      <span className="ml-1.5 bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500">{readingTimeText.replace('min', 'mins')}</span>
-                    </div>
-                  </dd>
-                </div>
-              </dl>
-            </div>
-          </header>
-          <div
-            className="pb-8 divide-y divide-gray-200 xl:divide-y-0 dark:divide-gray-700 xl:grid xl:grid-cols-4 xl:gap-x-6"
-            style={{ gridTemplateRows: 'auto 1fr' }}
+      <article className="flex flex-col items-start justify-center w-full max-w-2xl mx-auto mb-16">
+        <h2 className="font-bold text-3xl tracking-tight mb-4 mt-16 text-black dark:text-white md:text-5xl">
+          {title}
+        </h2>
+        <div className="flex flex-col items-start justify-between w-full mt-2 md:flex-row md:items-center">
+          <div className="flex items-center">
+           <Image
+              alt="Kapil Chaudhary"
+              height={24}
+              width={24}
+              src="/static/images/logo.jpg"
+              className="rounded-full"
+            />
+            <p className="ml-2 text-sm text-gray-700 dark:text-gray-300">
+              {'Kapil Chaudhary / '}
+              {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)} /
+              {readingTimeText.replace('min', 'mins')}
+            </p>
+          </div>
+          
+        </div>
+        <div className="w-full mt-4 prose dark:prose-dark max-w-none">
+          {children}
+        </div>
+        {/* <div className="text-sm text-gray-700 dark:text-gray-300">
+          <a
+            href={postUrl}
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <div>
-              <div className="hidden xl:block py-4 xl:py-8 border-b border-gray-200 dark:border-gray-700">
-                <Link
-                  href={`/blog/page/${page}`}
-                  className="flex text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                >
-                  <svg viewBox="0 -9 3 24" className="overflow-visible mr-3 w-auto h-6">
-                    <path
-                      d="M3 0L0 3L3 6"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    ></path>
-                  </svg>
-                  Back to the blog
-                </Link>
-              </div>
-              <dl className="pt-6 pb-10 xl:pt-11">
-                <dt className="sr-only">Authors</dt>
-                <dd>
-                  <ul className="flex justify-center space-x-8 xl:block sm:space-x-12 xl:space-x-0 xl:space-y-6">
-                    {authorDetails.map((author) => (
-                      <li className="flex items-center space-x-2" key={author.name}>
-                        {author.avatar && (
-                          <Image
-                            src={author.avatar}
-                            width="38px"
-                            height="38px"
-                            alt="avatar"
-                            className="w-10 h-10 rounded-full"
-                          />
-                        )}
-                        <dl className="text-sm font-medium leading-5 whitespace-nowrap">
-                          <dt className="sr-only">Name</dt>
-                          <dd className="font-medium text-primary-500 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 mb-0.5">{author.name}</dd>
-                          <dt className="sr-only">Github</dt>
-                          <dd>
-                            {author.github && (
-                              <>
-                                <Link
-                                  href={author.github}
-                                  className="text-primary-500 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300"
-                                >
-                                  {author.github.replace('https://github.com/', '@')}
-                                </Link>
-                              </>
-                            )}
-                          </dd>
-                        </dl>
-                      </li>
-                    ))}
-                  </ul>
-                </dd>
-              </dl>
-            </div>
-            <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:pb-0 xl:col-span-3 xl:row-span-2">
-              <div className="pt-10 pb-8 prose prose-lg dark:prose-dark max-w-none">{children}</div>
-              {/* <SocialButtons postUrl={postUrl} title={title} fileName={fileName} /> */}
-              <Comments frontMatter={frontMatter} />
-            </div>
-            <footer>
+            {'Discuss on Twitter'}
+          </a>
+          {` • `}
+          <a
+            href={slug}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {'Edit on GitHub'}
+          </a>
+        </div> */}
+        <SocialButtons postUrl={postUrl} title={title} fileName={fileName} />
+        <div className="prose prose-lg dark:prose-dark w-full place-items-center h-fit">
+        <Comments frontMatter={frontMatter} />
+        </div>
+        <footer>
               <div className="text-sm font-medium leading-5 xl:col-start-1 xl:row-start-2">
                 {/* <div className="pt-4 xl:pt-8">
                   <Link
@@ -173,8 +126,6 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, pag
                 )}
               </div>
             </footer>
-          </div>
-        </div>
       </article>
     </SectionContainer>
   )
