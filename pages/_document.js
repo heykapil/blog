@@ -4,20 +4,20 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link
-          rel="preload"
-          href="/font/ibm/ibm-plex-sans-var.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-          />
+          <link rel="preload" href="/font/ibm/ibm-plex-sans-var.woff2" as="font" type="font/woff2" crossOrigin='anonymous' />
+          <link rel="preload" href="/font/ibm/ibm-plex-sans-var-italic.woff2" as="font" type="font/woff2" crossOrigin='anonymous' />
+          <link rel="preload" href="/font/cansu/Cansu-Bold.woff" as="font" type="font/woff" crossOrigin='anonymous' />
+        {/*  <link rel="preload" href="/font/league-mono/LeagueMono-Bold.woff2" as="font" type="font/woff2" crossOrigin='anonymous' />
+          <link rel="preload" href="/font/league-mono/LeagueMono-SemiBold.woff2" as="font" type="font/woff2" crossOrigin='anonymous' />
+          <link rel="preload" href="/font/league-mono/LeagueMono-Regular.woff2" as="font" type="font/woff2" crossOrigin='anonymous' />
           <link rel="apple-touch-icon" sizes="76x76" href="/static/favicons/hat.png" />
           <link rel="icon" type="image/png" sizes="32x32" href="/static/favicons/hat.png" />
           <link rel="icon" type="image/jpg" sizes="16x16" href="/static/favicons/hat.jpg" />
+        */}
           <link rel="manifest" href="/static/favicons/site.webmanifest" />
           <link rel="mask-icon" href="/static/favicons/hat.png" color="#fff" />
           <meta name="msapplication-TileColor" content="#000000" />
-          <meta name="theme-color" content="#000000" />
+          <meta name="theme-color" content="#000000" /> 
           <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
           <script src="/static/extra.js" />
           {/*<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

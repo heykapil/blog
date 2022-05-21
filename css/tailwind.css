@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Cansu';
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  src: url(/font/cansu/Cansu-Regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Cansu';
+  font-style: normal;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+  src: url(/font/cansu/Cansu-Bold.woff) format('woff');
+}
+
 @layer utilities {
   .special-underline {
     @apply bg-gradient-to-r from-yellow-200 to-yellow-200
@@ -14,24 +30,6 @@
 }
 
 .prose a { @apply special-underline }
-
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: optional;
-  src: url(/font/ibm/ibm-plex-sans-var.woff2) format('woff2');
-}
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 100 900;
-  font-display: optional;
-  src: url(/font/ibm/ibm-plex-sans-var-italic.woff2) format('woff2');
-}
-
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;

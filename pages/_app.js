@@ -1,9 +1,11 @@
-import 'katex/dist/katex.css'
+import '@/css/postcss/tailwind.css'
+import 'katex/dist/katex.min.css'
 import '@/css/extra.css'
 import '@/css/prism.css'
-import '@/css/tailwind.css'
 import '@/css/twemoji.css'
 import '@/css/timeline.css'
+import renderMathInElement from 'katex/dist/contrib/auto-render.min.js'
+import { useEffect } from 'react'
 import { ThemeProvider } from 'next-themes'
 import Head from 'next/head'
 import Router from 'next/router';
@@ -30,6 +32,25 @@ Router.onRouteChangeError = () => {
 };
 
 export default function App({ Component, pageProps }) {
+  
+  useEffect(() => {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: "$$", right: "$$", display: true},
+        {left: "\\(", right: "\\)", display: false},
+        {left: "\\begin{equation}", right: "\\end{equation}", display: true},
+        {left: "\\begin{align}", right: "\\end{align}", display: true},
+        {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
+        {left: "\\begin{gather}", right: "\\end{gather}", display: true},
+        {left: "\\begin{CD}", right: "\\end{CD}", display: true},
+        {left: "\\[", right: "\\]", display: true},
+        {left: "$", right: "$", display: true}
+    ],
+    // rendering keys
+    throwOnError : false
+    });
+  }, [Component])
+
   return (
     <ThemeProvider attribute="class">
       <Head>

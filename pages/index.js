@@ -77,7 +77,7 @@ export default function Home({ posts }) {
           */}
           </div>
           <div className="border-t border-gray-200 dark:border-gray-700">
-          <h2 className="font-bold text-3xl tracking-tight mb-4 mt-16 text-black dark:text-white">
+          <h2 className="font-bold font-cansu text-3xl tracking-tight mb-4 mt-16 text-black dark:text-white">
           Latest Posts
         </h2>
         <p className="text-gray-600 dark:text-gray-400 mb-4">

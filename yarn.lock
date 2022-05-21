@@ -1021,15 +1021,10 @@
   resolved "https://registry.npmjs.org/@fal-works/esbuild-plugin-global-externals/-/esbuild-plugin-global-externals-2.1.2.tgz"
   integrity sha512-cEee/Z+I12mZcFJshKcCqC8tuX5hG3s+d+9nZ3LabqKF1vKdF41B92pJVCBggjAGORAeOzyyDDKrZwIkLffeOQ==
 
-"@fontsource/alegreya-sans@^4.5.8":
+"@fontsource/eb-garamond@^4.5.8":
   version "4.5.8"
-  resolved "https://registry.yarnpkg.com/@fontsource/alegreya-sans/-/alegreya-sans-4.5.8.tgz#acf1ed814a7ecb4bff13ee5b305125fd05a17b0f"
-  integrity sha512-+wateZ0x/gG9miEY3U0iCYDteEMM7eMgrV9LmpD1wxP+7/XWFQ+189ZmlNCnmpNSfDWZcCMSsjU/vWbbLpgcmA==
-
-"@fontsource/crimson-pro@^4.5.8":
-  version "4.5.8"
-  resolved "https://registry.yarnpkg.com/@fontsource/crimson-pro/-/crimson-pro-4.5.8.tgz#853928b9052392fd424d826c8485c7993f687515"
-  integrity sha512-nhFZj0GdGT6ZCmGiRFBxRpNW9djuxEDmlIqfB4aDdEw+8wmxC348T2WDL8YYpurYXorw5MxicpdEfpPwLmdcBQ==
+  resolved "https://registry.yarnpkg.com/@fontsource/eb-garamond/-/eb-garamond-4.5.8.tgz#af879d502ce045f7a4b0c317c2065818d84b149e"
+  integrity sha512-RjSjojD5JvIYiRvmaei2E+dyVkiiBYthOQoIwLn9K6uStnjhXl00owlBZdrVLxc7dF7Hnu8J/OvIUguiLDWP/g==
 
 "@humanwhocodes/config-array@^0.9.2":
   version "0.9.5"
