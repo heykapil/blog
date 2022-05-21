@@ -1,0 +1,12 @@
+/* Webfont: Cansu-Bold */
+@font-face {
+  font-family: 'Cansu2';
+  src: url('Cansu-Bold.eot'); /* IE9 Compat Modes */
+  src: url('Cansu-Bold.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('Cansu-Bold.woff') format('woff'),
+    /* Modern Browsers */ url('Cansu-Bold.ttf') format('truetype'),
+    /* Safari, Android, iOS */ url('Cansu-Bold.svg#Cansu-Bold') format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+}

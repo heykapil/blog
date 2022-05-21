@@ -1,0 +1,12 @@
+/* Webfont: Cansu-Regular */
+@font-face {
+  font-family: 'Cansu';
+  src: url('Cansu-Regular.eot'); /* IE9 Compat Modes */
+  src: url('Cansu-Regular.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('Cansu-Regular.woff') format('woff'),
+    /* Modern Browsers */ url('Cansu-Regular.ttf') format('truetype'),
+    /* Safari, Android, iOS */ url('Cansu-Regular.svg#Cansu-Regular') format('svg'); /* Legacy iOS */
+  font-style: normal;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+}
