@@ -14,39 +14,40 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
-    extend: {keyframes: {
-      wiggle: {
-        '0%': { transform: 'rotate(0deg)' },
-        '50%': { transform: 'rotate(180deg)' },
-        '100%': { transform: 'rotate(360deg)' },
+    extend: {
+      keyframes: {
+        wiggle: {
+          '0%': { transform: 'rotate(0deg)' },
+          '50%': { transform: 'rotate(180deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
+        'music-play-1': {
+          '0%, 100%': { height: '0%' },
+          '50%': { height: '70%' },
+        },
+        'music-play-2': {
+          '0%, 100%': { height: '50%' },
+          '25%': { height: '0%' },
+          '75%': { height: '100%' },
+        },
+        'music-play-3': {
+          '0%, 100%': { height: '70%' },
+          '15%': { height: '100%' },
+          '65%': { height: '0%' },
+        },
+        'music-play-4': {
+          '0%, 100%': { height: '50%' },
+          '35.7%': { height: '0%' },
+          '85.7%': { height: '70%' },
+        },
       },
-      'music-play-1': {
-        '0%, 100%': { height: '0%' },
-        '50%': { height: '70%' },
+      animation: {
+        wiggle: 'wiggle 7s linear infinite',
+        'music-play-1': 'music-play-1 .8s linear infinite',
+        'music-play-2': 'music-play-2 .8s linear infinite',
+        'music-play-3': 'music-play-3 .8s linear infinite',
+        'music-play-4': 'music-play-4 .8s linear infinite',
       },
-      'music-play-2': {
-        '0%, 100%': { height: '50%' },
-        '25%': { height: '0%' },
-        '75%': { height: '100%' },
-      },
-      'music-play-3': {
-        '0%, 100%': { height: '70%' },
-        '15%': { height: '100%' },
-        '65%': { height: '0%' },
-      },
-      'music-play-4': {
-        '0%, 100%': { height: '50%' },
-        '35.7%': { height: '0%' },
-        '85.7%': { height: '70%' },
-      },
-    },
-    animation: {
-      wiggle: 'wiggle 7s linear infinite',
-      'music-play-1': 'music-play-1 .8s linear infinite',
-      'music-play-2': 'music-play-2 .8s linear infinite',
-      'music-play-3': 'music-play-3 .8s linear infinite',
-      'music-play-4': 'music-play-4 .8s linear infinite',
-    },
       spacing: {
         '9/16': '56.25%',
       },
@@ -57,21 +58,21 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        'sans': ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'Cansu'],
-        'cansu': ['Cansu'],
+        sans: ['IBM Plex Sans'],
+        cansu: ['Cansu'],
       },
       gradientColorStops: {
         // https://coolors.co/2d00f7-6a00f4-8900f2-a100f2-b100e8-bc00dd-d100d1-db00b6-e500a4-f20089
-        "gradient-1-start": "#F20089",
-        "gradient-1-end": "#D100D1",
-        "gradient-2-start": "#D100D1",
-        "gradient-2-end": "#A100F2",
-        "gradient-3-start": "#A100F2",
-        "gradient-3-end": "#2D00F7",
+        'gradient-1-start': '#F20089',
+        'gradient-1-end': '#D100D1',
+        'gradient-2-start': '#D100D1',
+        'gradient-2-end': '#A100F2',
+        'gradient-3-start': '#A100F2',
+        'gradient-3-end': '#2D00F7',
       },
       colors: {
         primary: colors.fuchsia,
-        "spotify-green": "#1DB954",
+        'spotify-green': '#1DB954',
         green: colors.emerald,
         yellow: colors.amber,
         purple: colors.violet,
@@ -216,19 +217,19 @@ module.exports = {
               },
             },
             blockquote: {
-              color: theme("colors.gray.100"),
-              borderLeftColor: theme("colors.gray.700"),
+              color: theme('colors.gray.100'),
+              borderLeftColor: theme('colors.gray.700'),
             },
           },
         },
       }),
       keyframes: {
         shrink: {
-          "0% , 100%": {
-            height: "0.75rem",
+          '0% , 100%': {
+            height: '0.75rem',
           },
-          "50%": {
-            height: "0.375rem",
+          '50%': {
+            height: '0.375rem',
           },
         },
         'bg-hue-animation': {
@@ -245,81 +246,81 @@ module.exports = {
           },
         },
         expand: {
-          "0% , 100%": {
-            height: "0.375rem",
+          '0% , 100%': {
+            height: '0.375rem',
           },
-          "50%": {
-            height: "0.75rem",
+          '50%': {
+            height: '0.75rem',
           },
         },
-        "gradient-foreground-1": {
-          "0%, 16.667%, 100%": {
+        'gradient-foreground-1': {
+          '0%, 16.667%, 100%': {
             opacity: 1,
           },
-          "33.333%, 83.333%": {
+          '33.333%, 83.333%': {
             opacity: 0,
           },
         },
-        "gradient-background-1": {
-          "0%, 16.667%, 100%": {
+        'gradient-background-1': {
+          '0%, 16.667%, 100%': {
             opacity: 0,
           },
-          "25%, 91.667%": {
+          '25%, 91.667%': {
             opacity: 1,
           },
         },
-        "gradient-foreground-2": {
-          "0%, 100%": {
+        'gradient-foreground-2': {
+          '0%, 100%': {
             opacity: 0,
           },
-          "33.333%, 50%": {
+          '33.333%, 50%': {
             opacity: 1,
           },
-          "16.667%, 66.667%": {
+          '16.667%, 66.667%': {
             opacity: 0,
           },
         },
-        "gradient-background-2": {
-          "0%, to": {
+        'gradient-background-2': {
+          '0%, to': {
             opacity: 1,
           },
-          "33.333%, 50%": {
+          '33.333%, 50%': {
             opacity: 0,
           },
-          "25%, 58.333%": {
+          '25%, 58.333%': {
             opacity: 1,
           },
         },
-        "gradient-foreground-3": {
-          "0%, 50%, 100%": {
+        'gradient-foreground-3': {
+          '0%, 50%, 100%': {
             opacity: 0,
           },
-          "66.667%, 83.333%": {
+          '66.667%, 83.333%': {
             opacity: 1,
           },
         },
-        "gradient-background-3": {
-          "0%, 58.333%, 91.667%, 100%": {
+        'gradient-background-3': {
+          '0%, 58.333%, 91.667%, 100%': {
             opacity: 1,
           },
-          "66.667%, 83.333%": {
+          '66.667%, 83.333%': {
             opacity: 0,
           },
         },
       },
       animation: {
-        shrink: "shrink 1.5s infinite",
-        expand: "expand 1.5s infinite",
+        shrink: 'shrink 1.5s infinite',
+        expand: 'expand 1.5s infinite',
         'fade-text': '10s ease-in-out 3s 1 normal forwards running fade-away',
         shrink: 'shrink ease-in-out 1.5s infinite',
         expand: 'expand ease-in-out 1.5s infinite',
         'hue-animation': 'bg-hue-animation 10s infinite',
-        "gradient-background-1": "gradient-background-1 8s infinite",
-        "gradient-foreground-1": "gradient-foreground-1 8s infinite",
-        "gradient-background-2": "gradient-background-2 8s infinite",
-        "gradient-foreground-2": "gradient-foreground-2 8s infinite",
-        "gradient-background-3": "gradient-background-3 8s infinite",
-        "gradient-foreground-3": "gradient-foreground-3 8s infinite",
+        'gradient-background-1': 'gradient-background-1 8s infinite',
+        'gradient-foreground-1': 'gradient-foreground-1 8s infinite',
+        'gradient-background-2': 'gradient-background-2 8s infinite',
+        'gradient-foreground-2': 'gradient-foreground-2 8s infinite',
+        'gradient-background-3': 'gradient-background-3 8s infinite',
+        'gradient-foreground-3': 'gradient-foreground-3 8s infinite',
       },
     },
   },

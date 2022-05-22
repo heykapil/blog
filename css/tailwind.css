@@ -3,6 +3,22 @@
 @tailwind utilities;
 
 @font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 100 900;
+  text-rendering: optimizeLegibility;
+  src: url(/font/ibm/ibm-plex-sans-var.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: italic;
+  font-weight: 100 900;
+  text-rendering: optimizeLegibility;
+  src: url(/font/ibm/ibm-plex-sans-var-italic.woff2) format('woff2');
+}
+
+@font-face {
   font-family: 'Cansu';
   font-style: normal;
   font-weight: normal;
@@ -29,7 +45,9 @@
   }
 }
 
-.prose a { @apply special-underline }
+.prose a {
+  @apply special-underline;
+}
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
