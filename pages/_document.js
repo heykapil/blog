@@ -4,6 +4,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          <meta name="viewport" content="width=device-width" />
           <link
             rel="preload"
             href="/font/ibm/ibm-plex-sans-var.woff2"
@@ -32,8 +33,7 @@ class MyDocument extends Document {
             type="font/woff"
             crossOrigin="anonymous"
           />
-          <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
-          {/*  <link rel="preload" href="/font/league-mono/LeagueMono-Bold.woff2" as="font" type="font/woff2" crossOrigin='anonymous' />
+           {/*  <link rel="preload" href="/font/league-mono/LeagueMono-Bold.woff2" as="font" type="font/woff2" crossOrigin='anonymous' />
           <link rel="preload" href="/font/league-mono/LeagueMono-SemiBold.woff2" as="font" type="font/woff2" crossOrigin='anonymous' />
           <link rel="preload" href="/font/league-mono/LeagueMono-Regular.woff2" as="font" type="font/woff2" crossOrigin='anonymous' />
           <link rel="apple-touch-icon" sizes="76x76" href="/static/favicons/hat.png" />
