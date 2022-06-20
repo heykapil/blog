@@ -22,7 +22,7 @@ const LayoutWrapper = ({ children }) => {
   return (
     <>
       <MobileNav navShow={navShow} onToggleNav={onToggleNav} />
-      <header className="fixed top-0 z-40 bg-transparent backdrop-blur-lg firefox:bg-opacity-100 dark:bg-opacity-30 dark:firefox:bg-opacity-100 py-3 sticky bg-white/75 dark:bg-dark/75">
+      <header className="fixed top-0 z-40 bg-transparent w-full flex backdrop-blur-lg firefox:bg-opacity-100 dark:bg-opacity-30 dark:firefox:bg-opacity-100 py-3 sticky bg-white/75 dark:bg-dark/75">
         <div className="mx-auto max-w-3xl xl:max-w-5xl flex items-center justify-between px-3 xl:px-0">
           <div>
             <Link href="/" aria-label="Leo's Blog">
