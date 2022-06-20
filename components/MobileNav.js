@@ -69,8 +69,7 @@ const MobileNav = () => {
             <div key={link.title} className="px-12 py-4">
               <Link
                 href={link.href}
-                title={link.title}
-                className="border-b border-gray-400 dark:border-gray-600 text-gray-700 dark:text-gray-300 text-xl font-semibold leading-8 tracking-wide hover:text-black dark:hover:text-white"
+                className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
                 onClick={onToggleNav}
               >
                 {link.title}
