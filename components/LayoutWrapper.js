@@ -21,7 +21,7 @@ const LayoutWrapper = ({ children }) => {
   return (
     <>
       <header
-        className={`fixed w-full bg-transparent top-0 z-40 flex items-center justify-between bg-white bg-opacity-30 backdrop-blur-lg firefox:bg-opacity-100 dark:bg-opacity-30 dark:firefox:bg-opacity-100 overflow-x-hidden backdrop-blur supports-backdrop-blur:bg-white/95 py-3 sticky`}
+        className={`fixed w-full bg-transparent top-0 z-30 flex items-center justify-between bg-white bg-opacity-30 backdrop-blur-lg firefox:bg-opacity-100 dark:bg-opacity-30 dark:firefox:bg-opacity-100`}
       >
         <nav className="mx-auto max-w-3xl xl:max-w-5xl flex items-center justify-between px-3 xl:px-0">
           <div className="flex items-center w-full justify-between text-base leading-5">
@@ -42,8 +42,8 @@ const LayoutWrapper = ({ children }) => {
                 <div className="mr-3 flex justify-center items-center">
                   <NextImage
                     src="/static/images/final_logo.gif"
-                    width={45}
-                    height={45}
+                    width={50}
+                    height={50}
                     className="rounded-full"
                   />
                 </div>
