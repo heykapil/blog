@@ -4,7 +4,7 @@ import Footer from './Footer'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
 import NextImage from 'next/image'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 const LayoutWrapper = ({ children }) => {
   const [navShow, setNavShow] = useState(false)
@@ -18,39 +18,42 @@ const LayoutWrapper = ({ children }) => {
       return !status
     })
   }
+
   return (
     <>
-      <header
-        className={`fixed w-full bg-transparent top-0 z-30 flex items-center justify-between bg-white bg-opacity-30 backdrop-blur-lg firefox:bg-opacity-100 dark:bg-opacity-30 dark:firefox:bg-opacity-100`}
-      >
-        <nav className="mx-auto max-w-3xl xl:max-w-5xl flex items-center justify-between px-3 xl:px-0">
-          
-         <div className="flex items-center w-full justify-between text-base leading-5">
-            <div className="hidden sm:block">
-              {headerNavLinks.map((link) => (
-                <Link
-                  key={link.title}
-                  href={link.href}
-                  className="p-1 font-medium text-gray-900 sm:p-4 dark:text-gray-100 link-underline link-underline-black"
-                >
-                  {link.title}
-                </Link>
-              ))}
-            </div>
-              <div className="flex">
-              <NextImage
+      <MobileNav navShow={navShow} onToggleNav={onToggleNav} />
+      <header className="overflow-x-hidden backdrop-blur supports-backdrop-blur:bg-white/95 py-3 sticky top-0 z-40 bg-white/75 dark:bg-dark/75">
+        <div className="mx-auto max-w-3xl xl:max-w-5xl flex items-center justify-between px-3 xl:px-0">
+          <div>
+            <Link href="/" aria-label="Leo's Blog">
+              <div className="flex items-center justify-between">
+                <div className="mr-3 flex justify-center items-center">
+                  <NextImage
                     src="/static/images/logo.jpg"
                     width={45}
                     height={45}
                     className="rounded-full"
                   />
-              <ThemeSwitch />
-            </div>
+                </div>
+              </div>
+            </Link>
           </div>
-          <div className="sm:hidden">
+          <div className="flex items-center text-base leading-5">
+            <div className="hidden sm:block">
+              {headerNavLinks.map((link) => (
+                <Link
+                  key={link.title}
+                  href={link.href}
+                  className="p-1 font-medium text-gray-900 sm:p-4 dark:text-gray-100"
+                >
+                  {link.title}
+                </Link>
+              ))}
+            </div>
+            <ThemeSwitch />
             <button
               type="button"
-              className="ml-1 mr-1 h-8 w-8 rounded"
+              className="ml-1 mr-1 h-8 w-8 rounded sm:hidden"
               aria-label="Toggle Menu"
               onClick={onToggleNav}
             >
@@ -76,9 +79,8 @@ const LayoutWrapper = ({ children }) => {
               </svg>
             </button>
           </div>
-        </nav>
+        </div>
       </header>
-      <MobileNav navShow={navShow} onToggleNav={onToggleNav} />
       <div className="max-w-3xl px-3 xl:px-0 mx-auto sm:px-6 xl:max-w-5xl">
         <div className="flex flex-col justify-between min-h-screen">
           <main className="mb-auto">{children}</main>
