@@ -4,7 +4,7 @@ tags: [CSIR, Fellowship, NEWFMS, JRF]
 draft: false
 summary: This is guide for qualified CSIR JRF candidates who wants to activate their fellowship on NewFms portal of CSIR.
 authors: [default]
-date: 2022-06-20T23:40:39+05:30
+date: 2022-06-20
 modified: 2022-06-21T00:27:22+05:30
 ---
 
