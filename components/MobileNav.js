@@ -29,7 +29,7 @@ const MobileNav = ({ navShow, onToggleNav }) => {
       </button>
       <nav className="fixed h-full mt-8">
         {headerNavLinks.map((link) => (
-          <div key={link.title} className="px-8 py-4">
+          <div key={link.title} className="flex justify-between px-8 py-4">
             <Link
                 href={link.href}
                 title={link.title}
