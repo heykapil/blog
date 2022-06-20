@@ -12,10 +12,10 @@ const MobileNav = ({ navShow, onToggleNav }) => {
       >
         <div className="flex justify-end">
           <button
-            type="button"
+            type="hidden"
             className="mr-5 mt-11 h-8 w-8 rounded"
             aria-label="Toggle Menu"
-            onClick={onToggleNav}
+            onClick=""
           >
           </button>
         </div>
