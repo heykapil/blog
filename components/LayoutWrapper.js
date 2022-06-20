@@ -24,19 +24,7 @@ const LayoutWrapper = ({ children }) => {
         className={`fixed w-full bg-transparent top-0 z-30 flex items-center justify-between bg-white bg-opacity-30 backdrop-blur-lg firefox:bg-opacity-100 dark:bg-opacity-30 dark:firefox:bg-opacity-100`}
       >
         <nav className="mx-auto max-w-3xl xl:max-w-5xl flex items-center justify-between px-3 xl:px-0">
-          <div className="flex items-center w-full justify-between text-base leading-5">
-            <div className="hidden sm:block">
-              {headerNavLinks.map((link) => (
-                <Link
-                  key={link.title}
-                  href={link.href}
-                  className="p-1 font-medium text-gray-900 sm:p-4 dark:text-gray-100 link-underline link-underline-black"
-                >
-                  {link.title}
-                </Link>
-              ))}
-            </div>
-            <div className="flex">
+          <div className="flex">
              <Link href="/" aria-label="hello kapil">
               <div className="flex items-center justify-between">
                 <div className="mr-3 flex justify-center items-center">
@@ -49,6 +37,19 @@ const LayoutWrapper = ({ children }) => {
                 </div>
                </div>
               </Link>
+         </div>
+         <div className="flex items-center w-full justify-between text-base leading-5">
+            <div className="hidden sm:block">
+              {headerNavLinks.map((link) => (
+                <Link
+                  key={link.title}
+                  href={link.href}
+                  className="p-1 font-medium text-gray-900 sm:p-4 dark:text-gray-100 link-underline link-underline-black"
+                >
+                  {link.title}
+                </Link>
+              ))}
+            </div>
               <ThemeSwitch />
             </div>
           </div>
