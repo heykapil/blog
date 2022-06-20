@@ -8,24 +8,15 @@ import { useState } from 'react'
 
 const LayoutWrapper = ({ children }) => {
   const [navShow, setNavShow] = useState(false)
-  const onToggleNav = () => {
-    setNavShow((status) => {
-      if (status) {
-        document.body.style.overflow = 'auto'
-      } else {
-        document.body.style.overflow = 'hidden'
-      }
-      return !status
-    })
-  }
+  const onToggleNav = () => setNavShow((status) => !status)
 
   return (
     <>
       <MobileNav navShow={navShow} onToggleNav={onToggleNav} />
-      <header className="fixed top-0 z-40 bg-transparent w-full flex backdrop-blur-lg firefox:bg-opacity-100 dark:bg-opacity-30 dark:firefox:bg-opacity-100 py-3 sticky bg-white/75 dark:bg-dark/75">
-        <nav className="mx-auto max-w-3xl xl:max-w-5xl flex items-center justify-between px-3 xl:px-0">
+      <header className="overflow-x-hidden backdrop-blur supports-backdrop-blur:bg-white/95 py-3 sticky top-0 z-40 bg-white/75 dark:bg-dark/75">
+        <div className="mx-auto max-w-3xl xl:max-w-5xl flex items-center justify-between px-3 xl:px-0">
           <div>
-            <Link href="/" aria-label="Leo's Blog">
+            <Link href="/" aria-label="Kapil's Blog">
               <div className="flex items-center justify-between">
                 <div className="mr-3 flex justify-center items-center">
                   <NextImage
@@ -39,12 +30,12 @@ const LayoutWrapper = ({ children }) => {
             </Link>
           </div>
           <div className="flex items-center text-base leading-5">
-            <div className="hidden sm:block">
+            <div className="hidden sm:block space-x-2">
               {headerNavLinks.map((link) => (
                 <Link
                   key={link.title}
                   href={link.href}
-                  className="p-1 font-medium text-gray-900 sm:p-4 dark:text-gray-100 link-underline link-underline-black"
+                  className="link-underline-black link-underline rounded py-1 px-2 font-medium text-gray-900 sm:py-2 sm:px-3 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700"
                 >
                   {link.title}
                 </Link>
@@ -52,8 +43,8 @@ const LayoutWrapper = ({ children }) => {
             </div>
             <ThemeSwitch />
             <button
+              className="w-8 h-8 ml-2 mr-1 rounded sm:hidden"
               type="button"
-              className="ml-1 mr-1 h-8 w-8 rounded sm:hidden"
               aria-label="Toggle Menu"
               onClick={onToggleNav}
             >
@@ -61,25 +52,17 @@ const LayoutWrapper = ({ children }) => {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 fill="currentColor"
-                className="text-gray-900 dark:text-gray-300 dark:hover:text-gray-100"
+                className="text-gray-900 dark:text-gray-100"
               >
-                {navShow ? (
-                  <path
-                    fillRule="evenodd"
-                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  />
-                ) : (
-                  <path
-                    fillRule="evenodd"
-                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                    clipRule="evenodd"
-                  />
-                )}
+                <path
+                  fillRule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clipRule="evenodd"
+                />
               </svg>
             </button>
           </div>
-        </nav>
+        </div>
       </header>
       <div className="max-w-3xl px-3 xl:px-0 mx-auto sm:px-6 xl:max-w-5xl">
         <div className="flex flex-col justify-between min-h-screen">
