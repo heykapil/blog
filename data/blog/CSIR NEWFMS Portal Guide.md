@@ -1,9 +1,9 @@
 ---
-title: 'CSIR NEWFMS Portal Guide'
-tags: '[CSIR, Fellowship, NEWFMS, JRF]'
-draft: 'false'
-summary: 'This is guide for qualified CSIR JRF candidates who wants to activate their fellowship on NewFms portal of CSIR.
-authors: '[default]'
+title: CSIR NEWFMS Portal Guide
+tags: [CSIR, Fellowship, NEWFMS, JRF]
+draft: false
+summary: This is guide for qualified CSIR JRF candidates who wants to activate their fellowship on NewFms portal of CSIR.
+authors: [default]
 date: '2022-06-21'
 created: '2022-06-21T00:05:00+5:30'
 modified: '2022-06-21T00:06:24+05:30'
