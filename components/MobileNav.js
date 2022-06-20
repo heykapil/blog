@@ -10,12 +10,7 @@ const MobileNav = ({ navShow, onToggleNav }) => {
           navShow ? 'translate-x-0' : 'translate-x-full'
         } bg-opacity-30 dark:bg-opacity-30 backdrop-blur-lg firefox:bg-opacity-100 dark:firefox:bg-opacity-100`}
       >
-        <button
-          type="button"
-          aria-label="toggle modal"
-          className="fixed z-30 w-full h-full cursor-auto focus:outline-none"
-          onClick={onToggleNav}
-        ></button>
+        
         <nav className="mt-8 relative space-y-8 z-40">
           {headerNavLinks.map((link) => (
             <div key={link.title} className="px-12">
