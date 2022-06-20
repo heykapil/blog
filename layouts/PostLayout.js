@@ -12,7 +12,7 @@ import SocialButtons from '@/components/SocialButtons'
 
 const headingColorClass =
     'bg-gradient-to-r from-yellow-600 to-red-600 dark:bg-gradient-to-l dark:from-emerald-500 dark:to-lime-600'
-const postDateTemplate = { year: 'numeric', month: 'short', day: 'numeric' }
+const postDateTemplate = { year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: 'true', timeZoneName: 'short' }
 
 export default function PostLayout({ frontMatter, authorDetails, next, prev, page, children }) {
   const {
