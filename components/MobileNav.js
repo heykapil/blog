@@ -27,11 +27,10 @@ const MobileNav = ({ navShow, onToggleNav }) => {
           />
         </svg>
       </button>
-        </div>
-        <nav className="mt-8 relative space-y-8 z-40">
-          {headerNavLinks.map((link) => (
-            <div key={link.title} className="px-12">
-              <Link
+      <nav className="fixed h-full mt-8">
+        {headerNavLinks.map((link) => (
+          <div key={link.title} className="px-8 py-4">
+            <Link
                 href={link.href}
                 title={link.title}
                 className="border-b border-gray-400 dark:border-gray-600 text-gray-700 dark:text-gray-300 text-xl font-semibold leading-8 tracking-wide hover:text-black dark:hover:text-white"
@@ -39,10 +38,9 @@ const MobileNav = ({ navShow, onToggleNav }) => {
               >
                 {link.title}
               </Link>
-            </div>
-          ))}
-        </nav>
-      </div>
+          </div>
+        ))}
+      </nav>
     </div>
   )
 }
