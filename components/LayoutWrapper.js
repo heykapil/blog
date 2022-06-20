@@ -20,37 +20,32 @@ const LayoutWrapper = ({ children }) => {
   }
   return (
     <>
-      <MobileNav navShow={navShow} onToggleNav={onToggleNav} />
-      <header className="overflow-x-hidden backdrop-blur supports-backdrop-blur:bg-white/95 py-3 sticky top-0 z-40 bg-white/75 dark:bg-dark/75">
-        <div className="mx-auto max-w-3xl xl:max-w-5xl flex items-center justify-between px-3 xl:px-0">
-          <div>
-            <Link href="/" aria-label="hello kapil">
-              <div className="flex items-center justify-between">
-                <div className="mr-3 flex justify-center items-center">
-                  <NextImage
-                    src="/static/images/logo.jpg"
-                    width={45}
-                    height={45}
-                    className="rounded-full"
-                  />
-                </div>
-              </div>
-            </Link>
-          </div>
-          <div className="flex items-center text-base leading-5">
+      <header
+        className={`fixed w-full bg-transparent ${
+          isTop
+            ? 'border-none'
+            : 'border-b border-gray-200 dark:border-gray-800 dark:bg-violet-1000'
+        } top-0 z-30 flex items-center justify-between bg-white bg-opacity-30 backdrop-blur-lg firefox:bg-opacity-100 dark:bg-opacity-30 dark:firefox:bg-opacity-100`}
+      >
+        <nav className="mx-auto flex w-full max-w-3xl items-center justify-between px-2 py-2 xl:px-0">
+          <div className="flex w-full items-center justify-between text-base leading-5">
             <div className="hidden sm:block">
               {headerNavLinks.map((link) => (
                 <Link
                   key={link.title}
                   href={link.href}
-                  className="p-1 font-medium text-gray-900 sm:p-4 dark:text-gray-100 link-underline link-underline-black"
+                  className="p-2 font-medium text-gray-900 dark:text-gray-300 dark:hover:text-gray-100 xl:first:pl-0 sm:py-4 sm:px-3"
                 >
                   {link.title}
                 </Link>
               ))}
             </div>
-            <ThemeSwitch />
-              <button
+            <div className="flex">
+              <ThemeSwitch />
+            </div>
+          </div>
+          <div className="sm:hidden">
+            <button
               type="button"
               className="ml-1 mr-1 h-8 w-8 rounded"
               aria-label="Toggle Menu"
@@ -78,8 +73,9 @@ const LayoutWrapper = ({ children }) => {
               </svg>
             </button>
           </div>
-        </div>
+        </nav>
       </header>
+      <MobileNav navShow={navShow} onToggleNav={onToggleNav} />
       <div className="max-w-3xl px-3 xl:px-0 mx-auto sm:px-6 xl:max-w-5xl">
         <div className="flex flex-col justify-between min-h-screen">
           <main className="mb-auto">{children}</main>
