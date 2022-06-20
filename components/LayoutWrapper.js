@@ -50,7 +50,7 @@ const LayoutWrapper = ({ children }) => {
               ))}
             </div>
             <ThemeSwitch />
-            <div className="sm:hidden">
+            <div className="sm:hidden sticky top-0 z-40">
             <button
               type="button"
               className="ml-1 mr-1 h-8 w-8 rounded"
