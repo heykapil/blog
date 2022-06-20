@@ -23,7 +23,7 @@ const LayoutWrapper = ({ children }) => {
     <>
       <MobileNav navShow={navShow} onToggleNav={onToggleNav} />
       <header className="fixed top-0 z-40 bg-transparent w-full flex backdrop-blur-lg firefox:bg-opacity-100 dark:bg-opacity-30 dark:firefox:bg-opacity-100 py-3 sticky bg-white/75 dark:bg-dark/75">
-        <div className="mx-auto max-w-3xl xl:max-w-5xl flex items-center justify-between px-3 xl:px-0">
+        <nav className="mx-auto max-w-3xl xl:max-w-5xl flex items-center justify-between px-3 xl:px-0">
           <div>
             <Link href="/" aria-label="Leo's Blog">
               <div className="flex items-center justify-between">
@@ -79,7 +79,7 @@ const LayoutWrapper = ({ children }) => {
               </svg>
             </button>
           </div>
-        </div>
+        </nav>
       </header>
       <div className="max-w-3xl px-3 xl:px-0 mx-auto sm:px-6 xl:max-w-5xl">
         <div className="flex flex-col justify-between min-h-screen">
