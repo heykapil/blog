@@ -1,25 +1,11 @@
-import { useState } from 'react'
 import Link from './Link'
 import headerNavLinks from '@/data/headerNavLinks'
 
-const MobileNav = () => {
-  const [navShow, setNavShow] = useState(false)
-
-  const onToggleNav = () => {
-    setNavShow((status) => {
-      if (status) {
-        document.body.style.overflow = 'auto'
-      } else {
-        // Prevent scrolling
-        document.body.style.overflow = 'hidden'
-      }
-      return !status
-    })
-  }
+const MobileNav = ({ navShow, onToggleNav }) => {
 
   return (
     <div className="sm:hidden">
-      <button
+     <button
         type="button"
         className="ml-1 mr-1 h-8 w-8 rounded py-1"
         aria-label="Toggle Menu"
@@ -43,27 +29,12 @@ const MobileNav = () => {
           navShow ? 'translate-x-0' : 'translate-x-full'
         } bg-opacity-30 dark:bg-opacity-30 backdrop-blur-lg firefox:bg-opacity-100 dark:firefox:bg-opacity-100`}
       >
-        <div className="flex justify-end">
-          <button
-            type="button"
-            className="mr-5 mt-11 h-8 w-8 rounded"
-            aria-label="Toggle Menu"
-            onClick={onToggleNav}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              className="text-gray-900 dark:text-gray-100"
-            >
-              <path
-                fillRule="evenodd"
-                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </button>
-        </div>
+        <button
+          type="button"
+          aria-label="toggle modal"
+          className="fixed z-30 w-full h-full cursor-auto focus:outline-none "
+          onClick={onToggleNav}
+        ></button>
         <nav className="mt-8 relative space-y-8 z-40">
           {headerNavLinks.map((link) => (
             <div key={link.title} className="px-12">
