@@ -24,20 +24,7 @@ const LayoutWrapper = ({ children }) => {
         className={`fixed w-full bg-transparent top-0 z-30 flex items-center justify-between bg-white bg-opacity-30 backdrop-blur-lg firefox:bg-opacity-100 dark:bg-opacity-30 dark:firefox:bg-opacity-100`}
       >
         <nav className="mx-auto max-w-3xl xl:max-w-5xl flex items-center justify-between px-3 xl:px-0">
-          <div className="flex">
-             <Link href="/" aria-label="hello kapil">
-              <div className="flex items-center justify-between">
-                <div className="mr-3 flex justify-center items-center">
-                  <NextImage
-                    src="/static/images/final_logo.gif"
-                    width={50}
-                    height={50}
-                    className="rounded-full"
-                  />
-                </div>
-               </div>
-              </Link>
-         </div>
+          
          <div className="flex items-center w-full justify-between text-base leading-5">
             <div className="hidden sm:block">
               {headerNavLinks.map((link) => (
@@ -50,6 +37,13 @@ const LayoutWrapper = ({ children }) => {
                 </Link>
               ))}
             </div>
+              <div className="flex">
+              <NextImage
+                    src="/static/images/logo.jpg"
+                    width={45}
+                    height={45}
+                    className="rounded-full"
+                  />
               <ThemeSwitch />
             </div>
           </div>
