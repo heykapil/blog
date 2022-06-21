@@ -39,7 +39,7 @@ export default function Home({ posts }) {
               <h1 className="text-neutral-900 dark:text-neutral-200">
                 <span className="font-medium background-author-animate bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-clip-text text-transparent">I'm Kapil Chaudhary</span> - a research scholar in
                 mathematical modelling. <br />
-                <span className="font-medium">Junior Reseaech Fellow, CSIR India.</span>
+                <span className="font-medium">Junior Research Fellow, CSIR India.</span>
                 <span className="align-middle">
                 <i className="twa twa-india-flag"></i>
                 </span>
