@@ -16,7 +16,7 @@ const LayoutWrapper = ({ children }) => {
       <header className="overflow-x-hidden backdrop-blur supports-backdrop-blur:bg-white/95 py-3 sticky top-0 z-40 bg-white/75 dark:bg-dark/75">
         <div className="mx-auto max-w-3xl xl:max-w-5xl flex items-center justify-between px-3 xl:px-0">
           <div>
-            <Link href="/" aria-label="hello kapil">
+            <Link href="/" aria-label="Kapil's Blog">
               <div className="flex items-center justify-between">
                 <div className="mr-3 flex justify-center items-center">
                   <NextImage
@@ -30,12 +30,12 @@ const LayoutWrapper = ({ children }) => {
             </Link>
           </div>
           <div className="flex items-center text-base leading-5">
-            <div className="hidden sm:block">
+            <div className="hidden sm:block space-x-2">
               {headerNavLinks.map((link) => (
                 <Link
                   key={link.title}
                   href={link.href}
-                  className="p-1 font-medium text-gray-900 sm:p-4 dark:text-gray-100 link-underline link-underline-black"
+                  className="link-underline-black link-underline rounded py-1 px-2 font-medium text-gray-900 sm:py-2 sm:px-3 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700"
                 >
                   {link.title}
                 </Link>

@@ -28,11 +28,11 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, pag
     <SectionContainer>
       <BlogSeo url={postUrl} authorDetails={authorDetails} {...frontMatter} />
       <ScrollTop />
-      <article className="font-cansu flex flex-col items-start justify-center w-full max-w-2xl mx-auto mb-16">
-        <h2 className="font-bold text-3xl tracking-tight mb-4 mt-16 text-black dark:text-white md:text-5xl">
+      <article className="flex flex-col items-start justify-center w-full max-w-2xl mx-auto mb-16">
+        <h2 className="font-cansu font-bold text-3xl tracking-tight mb-4 mt-16 text-black dark:text-white md:text-5xl">
           {title}
         </h2>
-        <div className="flex flex-col items-start justify-between w-full mt-2 md:flex-row md:items-center">
+        <div className="font-cansu flex flex-col items-start justify-between w-full mt-2 md:flex-row md:items-center">
           <div className="flex items-center">
            <Image
               alt="Kapil Chaudhary"
