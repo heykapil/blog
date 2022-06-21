@@ -43,11 +43,11 @@ Once maker and checker completes your registration on NewFms portal of CSIR, the
 
 ## 5. Welcome to NewFms Portal
 
-Login in the NewFms portal using username and password obtained on the mobile number. Keep your mobile number safe as an OTP will be recieved every time while logging in the portal. Once logged in, Do a few things
+Login into the NewFms portal using username and password obtained on the mobile number. Keep your mobile number safe as an OTP will be recieved every time while logging in portal. Once logged in, Do a few things:
 - Check again your personal and bank account details in profile section.
 - Download the award letter from Download section and keep it safe. It will have file number of fellow as well. 
 - File number is important and generated uniquely for each fellow and must be mentioned in bills, attendance, contigency, grievience and in any other forms or future communication by fellow with CSIR.
 
 ## 6. Monthly Fellowship Claim
 
-One can send _each months _rom date of joining_ monthly claim bill and attendence certificate to maker of institute/university. Each file should be in PDF format and size not exceeding 140 KB.
+One can send each months _from date of joining_ duly filled monthly claim bill and attendence certificate _to be furnished on letter head of department/university_ to maker of institute/university. Each file should be in PDF format and size not exceeding 140 KB. These files will be uploaded by maker of institute by 10th of each month. These monthly bills will be approved by checker, CSIR-EMR officials and CSIR-Finance officials and usually takes oround 1-3 months. One can check the status of approvals in fellowship by clicking on Payment status on NewFms dashboard.
