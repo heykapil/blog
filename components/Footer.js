@@ -16,8 +16,10 @@ export default function Footer() {
           <SocialIcon kind="linkedin" href={siteMetadata.linkedin} />
           <SocialIcon kind="twitter" href={siteMetadata.twitter} />
         </div>
-        <div className="background-author-animate mb-2 flex space-x-2 bg-gradient-to-r from-red-500 via-purple-500 to-yellow-500 bg-clip-text text-base font-semibold text-transparent">
-          <div>Have a good {currentDayName()}!</div>
+        <div className="background-author-animate mb-2 flex space-x-2 bg-gradient-to-r from-orange-500 via-purple-500 to-blue-500 bg-clip-text text-base font-semibold text-transparent">
+          <div><Link href="/credits"
+            rel="noopener noreferrer"
+            className="link-underline link-underline-black font-medium text-gray-900 dark:text-gray-100">Credits</Link> | Have a good {currentDayName()}!</div>
         </div>
         <div className="mb-3 flex">
           <NowPlaying />

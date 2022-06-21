@@ -17,7 +17,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
 
   return (
     <>
-      <div className="divide-y flex flex-col items-start justify-center max-w-2xl mx-auto mb-16">
+      <div className="flex flex-col items-start justify-center max-w-2xl mx-auto mb-16">
         <div className="pt-6 pb-8 space-y-2 md:space-y-5">
           <h2 className="font-bold text-3xl tracking-tight mb-4 mt-16 text-black dark:text-white">
             Tag: {title}
@@ -54,7 +54,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
           {displayPosts.map((frontMatter) => {
             const { slug, date, title, summary, tags } = frontMatter
             return (
-              <li key={slug} className="py-4 flex group hover:bg-gray-100 dark:hover:bg-gray-800 bg-transparent bg-opacity-20 px-2 hover:rounded-xl transition duration-200">
+              <li key={slug} className="py-10 flex group hover:bg-gray-100 dark:hover:bg-gray-800 bg-transparent bg-opacity-20 px-10 hover:rounded-xl transition duration-200">
                 <article className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline gap-4">
                   <dl>
                     <dt className="sr-only">Published on</dt>

@@ -36,7 +36,7 @@
 
 @layer utilities {
   .special-underline {
-    @apply bg-gradient-to-r from-neutral-200 to-neutral-200
+    @apply bg-gradient-to-r from-green-200 to-green-200 dark:bg-gradient-to-r dark:from-zinc-800 dark:to-zinc-800
       bg-no-repeat [background-position:0_88%]
       [background-size:100%_0.2em]
       motion-safe:transition-all motion-safe:duration-200
