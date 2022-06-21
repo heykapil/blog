@@ -10,15 +10,15 @@ modified: '2022-06-21'
 
 I have recently taken admission in Ph.D. and was eligible for the CSIR JRF-NET fellowship. But there was not much clear instructions available for new fellows at the [csir website](https://csirhrdg.res.in), [NEWFMS Portal](https://newfms.ncl.res.in) and any other place. So, this post is for the new JRF fellows who wants to activate their CSIR fellowship.
 
- **1. About CSIR JRF-NET**
+ ## 1. About CSIR JRF-NET
 
 The National eligibility test(NET) is conducted by National Testing Agency(NTA) on behalf of CSIR and UGC. A number of candidate who get good ranks are declared JRF and such candidates are eligible for fellowship if they apply for the research in India.
 
-**2. About NewFms Portal**
+## 2. About NewFms Portal
 
 CSIR used to process the fellowship bills offline before the COVID period. But during COVID period, CSIR decided to make these process online and created NewFms Portal for the same. Fellowship monthly bills, attendence, contigency, award letters, leaves, continuation, upgradation and many more things are approved and processed online by CSIR via this portal.
 
-**3. Registration of New JRFs**
+## 3. Registration of New JRFs
 
 Unfortunately, Fellows can not register themselves on NewFms portal. However, once a fellow take admission in any higher institute/university for the research. If that university/institue is registered with CSIR NewFms Portal then it has two appointed officials in the university- maker and checker. These officials have the rights to collect and verify the fellows documents and then to send these documents (upload on NewFms portal) to CSIR for verification and registration of new fellow on NewFms portal.
 
@@ -36,3 +36,4 @@ Unfortunately, Fellows can not register themselves on NewFms portal. However, on
 - Copy of Bank Passbook
 
 **Note:** Files should be in PDF format and size should not be more than 1 MB. File name must contain albhabets only. (No space, number or special character otherwise there will be problem in uploading files on portal).
+
