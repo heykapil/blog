@@ -1,7 +1,7 @@
 import TopTracks from 'components/TopTracks'
 export default function SpotifyTopTracks() {
   return (
-    <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
+    <div className="flex flex-col justify-center items-start max-w-4xl mx-auto mb-16">
     <h2 className="font-bold text-3xl tracking-tight mb-4 mt-16 text-black dark:text-white">
           Top Tracks
         </h2>

@@ -28,7 +28,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, pag
     <SectionContainer>
       <BlogSeo url={postUrl} authorDetails={authorDetails} {...frontMatter} />
       <ScrollTop />
-      <article className="flex flex-col items-start justify-center w-full max-w-2xl mx-auto mb-16">
+      <article className="flex flex-col items-start justify-center w-full max-w-4xl mx-auto mb-16">
         <h2 className="font-cansu font-bold text-3xl tracking-tight mb-4 mt-16 text-black dark:text-white md:text-5xl">
           {title}
         </h2>

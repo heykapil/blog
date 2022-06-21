@@ -17,7 +17,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
 
   return (
     <>
-      <div className="divide-y flex flex-col items-start justify-center max-w-2xl mx-auto mb-16">
+      <div className="divide-y flex flex-col items-start justify-center max-w-4xl	 mx-auto mb-16">
         <div className="pt-6 pb-8 space-y-2 md:space-y-5">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             {title}
