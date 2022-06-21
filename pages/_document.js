@@ -4,7 +4,6 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <meta name="viewport" content="width=device-width" />
           <link
             rel="preload"
             href="/font/ibm/ibm-plex-sans-var.woff2"

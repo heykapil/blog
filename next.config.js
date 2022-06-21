@@ -9,7 +9,7 @@ module.exports = withBundleAnalyzer({
     dirs: ['pages', 'components', 'lib', 'layouts', 'scripts'],
   },
   images: {
-    domains: ['img.shields.io', 'i.scdn.co'],
+    domains: ['img.shields.io', 'flowbite.com', 'i.scdn.co'],
   },
   eslint: {
     // Warning: This allows production builds to successfully complete even if

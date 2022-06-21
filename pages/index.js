@@ -1,4 +1,5 @@
 import Link from '@/components/Link'
+import Image from '@/components/Image'
 import { PageSeo } from '@/components/SEO'
 import Hero from "@/components/Hero"
 import Tag from '@/components/Tag'
@@ -48,7 +49,7 @@ export default function Home({ posts }) {
             </div>
           </div>
         </div>
-        {/* <div className="pb-2 w-full flex flex-wrap mx-auto">
+         <div className="pb-2 w-full flex flex-wrap mx-auto">
             <CardNoBG
               title='Research'
               description='Know more about my interests and published papers.'
@@ -74,7 +75,7 @@ export default function Home({ posts }) {
               className="py-4 md:px-4"
             />
             </div>
-          */}
+          
           </div>
           <div className="border-t border-gray-200 dark:border-gray-700">
           <h2 className="font-bold font-cansu text-3xl tracking-tight mb-4 mt-16 text-black dark:text-white">
@@ -90,6 +91,25 @@ export default function Home({ posts }) {
             return (
               <li key={slug} className="py-12 flex group hover:bg-gray-100 dark:hover:bg-gray-800 bg-transparent bg-opacity-20 px-2 hover:rounded-xl transition duration-200">
                 <article>
+                <div className="pb-2 w-full flex flex-wrap mx-auto">
+                <div class="max-w-lg mx-auto">
+                  <div className="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm mb-5">
+                  <Link href={`/blog/${slug}`} className="text-gray-900 dark:text-gray-100">
+                            <Image className="rounded-t-lg" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="avatar" layout='responsive' width='100%' height='100%' />
+                            </Link>
+                      <div class="p-5">
+                      <Link href={`/blog/${slug}`} className="text-gray-900 dark:text-gray-100">
+                              <h5 className="text-gray-900 font-bold text-2xl tracking-tight mb-2">{title}</h5>
+                          </Link>
+                          <p className="font-normal text-gray-700 mb-3">{summary}</p>
+                          <Link className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center" href="#">
+                              Read more
+                          </Link>
+                      </div>
+                  </div>
+                
+              </div>
+                </div>
                   <div className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
                     <dl>
                       <dt className="sr-only">Published on</dt>

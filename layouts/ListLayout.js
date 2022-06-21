@@ -23,7 +23,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
             {title}
           </h1>
           <p className="mb-4 text-gray-600 dark:text-gray-400">
-          {`I've always wished to have a personal space where i can pen down things. So, I've started writing online since 2022, mostly about personal life, web development, research and courses that i've taught . I've written many articles on my blog.
+          {`I've always wished to have a personal space where i can pen down things. So, I've started writing online since 2022, mostly about personal life, web development, research and courses that i've taught. I've written many articles on my blog.
             Use the search below to filter by title.`}
         </p>
           <div className="relative w-full">
@@ -58,7 +58,9 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
               <li key={slug} className="py-4 flex group hover:bg-gray-100 dark:hover:bg-gray-800 bg-transparent bg-opacity-20 px-2 hover:rounded-xl transition duration-200">
                 <article className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline gap-4">
                   <dl>
-                    <dt className="sr-only">Published on</dt>
+                    <dt className="sr-only">
+                    Published on
+                    </dt>
                     <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
                       <time dateTime={date}>{formatDate(date)}</time>
                     </dd>
