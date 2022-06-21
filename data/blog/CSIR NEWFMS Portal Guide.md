@@ -22,7 +22,7 @@ CSIR used to process the fellowship bills offline before the COVID period. But d
 
 Unfortunately, Fellows can not register themselves on NewFms portal. However, once a fellow take admission in any higher institute/university for the research. If that university/institue is registered with CSIR NewFms Portal then it has two appointed officials in the institute/university- maker and checker. _Check if your university is registered or not ? [[Link]](https://newfms.ncl.res.in/MNGT/InstituteRegStatus.aspx) otherwise ask your university officials to get registered._ These officials have the rights to collect and verify the fellows documents and then to send these documents (via portal) to CSIR for verification and registration of new fellows on NewFms portal. So, for the activation of JRF-NET fellowship, one has to contact the maker and checker of thier institute/university with the following required documents.
 
-**Documents Required**
+**Documents Required:**
 - Duly filled Joining/Undertaking and Attestaion forms [Download](https://csirhrdg.res.in/SiteContent/ManagedContent/ContentFiles/20190619160204516jrf_Undertaking_Form.pdf)
 - Passport sized color photograph of candidate
 - Class 10th Marksheet and certificate (for DOB verification)
@@ -50,4 +50,8 @@ Login into the NewFms portal using username and password obtained on the mobile 
 
 ## 6. Monthly Fellowship Claim
 
-One can send each months _from date of joining_ duly filled monthly claim bill and attendence certificate _to be furnished on letter head of department/university_ to maker of institute/university. Each file should be in PDF format and size not exceeding 140 KB. These files will be uploaded by maker of institute by 10th of each month. These monthly bills will be approved by checker, CSIR-EMR officials and CSIR-Finance officials and usually takes oround 1-3 months. One can check the status of approvals in fellowship by clicking on Payment status on NewFms dashboard.
+One can send each months _from date of joining_ duly filled monthly claim bill and attendence certificate to maker of institute/university. Each file should be in PDF format and size not exceeding 140 KB. These files will be uploaded by maker of institute by 10th of each month. These monthly bills will be approved by checker, CSIR-EMR officials and CSIR-Finance officials and usually takes around 1-3 months. One can check the status of approvals by clicking on _Payment status_ after logging in NewFms dashboard.
+
+**Performa of Files:**
+- [Monthly Claim Bill](/static/docs/monthly-bill.docx)
+- [Attendance Certificate](/static/docs/New_Attendance_Certificate_CSIR.docx) _to be furnished on letter head of department/university_ and [Attendance Record](/static/docs/ATTENDANCE_RECORD.docx)
