@@ -49,3 +49,5 @@ Login in the NewFms portal using username and password obtained on the mobile nu
 - File number is important and generated uniquely for each fellow and must be mentioned in bills, attendance, contigency, grievience and in any other forms or future communication by fellow with CSIR.
 
 ## 6. Monthly Fellowship Claim
+
+One can send _each months _rom date of joining_ monthly claim bill and attendence certificate to maker of institute/university. Each file should be in PDF format and size not exceeding 140 KB.
