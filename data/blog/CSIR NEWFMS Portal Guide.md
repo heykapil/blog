@@ -20,7 +20,7 @@ CSIR used to process the fellowship bills offline before the COVID period. But d
 
 ## 3. Registration of New JRFs
 
-Unfortunately, Fellows can not register themselves on NewFms portal. However, once a fellow take admission in any higher institute/university for the research. If that university/institue is registered with CSIR NewFms Portal then it has two appointed officials in the university- maker and checker. These officials have the rights to collect and verify the fellows documents and then to send these documents (upload on NewFms portal) to CSIR for verification and registration of new fellow on NewFms portal.
+Unfortunately, Fellows can not register themselves on NewFms portal. However, once a fellow take admission in any higher institute/university for the research. If that university/institue is registered with CSIR NewFms Portal then it has two appointed officials in the institute/university- maker and checker. (Check if your university is registered or not ? [Link](https://newfms.ncl.res.in/MNGT/InstituteRegStatus.aspx) otherwise ask your university officials to get registered.) These officials have the rights to collect and verify the fellows documents and then to send these documents (upload on NewFms portal) to CSIR for verification and registration of new fellow on NewFms portal. So, for the activation of JRF-NET fellowship, one has to contact the maker and checker of thier institute/university with the following required documents.
 
 **Documents Required**
 - Duly filled Joining/Undertaking and Attestaion forms [Download](https://csirhrdg.res.in/SiteContent/ManagedContent/ContentFiles/20190619160204516jrf_Undertaking_Form.pdf)
