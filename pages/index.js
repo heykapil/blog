@@ -78,10 +78,10 @@ export default function Home({ posts }) {
   */}
           </div>
           <div className="border-t border-gray-200 dark:border-gray-700">
-          <h2 className="font-bold font-cansu text-3xl tracking-tight mb-4 mt-16 px-12 text-black dark:text-white">
+          <h2 className="font-bold font-cansu text-3xl tracking-tight mb-4 mt-16 text-black dark:text-white">
           Latest Posts
         </h2>
-        <p className="text-gray-600 dark:text-gray-400 px-12 mb-4">
+        <p className="text-gray-600 dark:text-gray-400 mb-4">
           You can find the latest blog articles written by me arranged date wise.
         </p>
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
@@ -89,7 +89,7 @@ export default function Home({ posts }) {
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
             const { slug, date, title, summary, tags } = frontMatter
             return (
-              <li key={slug} className="py-12 flex group hover:bg-gray-100 dark:hover:bg-gray-800 bg-transparent bg-opacity-20 px-12 hover:rounded-xl transition duration-200">
+              <li key={slug} className="py-12 flex group hover:bg-gray-100 dark:hover:bg-gray-800 bg-transparent bg-opacity-20 px-8 hover:rounded-xl transition duration-200">
                 <article>
                   <div className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
                     <dl>
