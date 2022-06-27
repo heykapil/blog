@@ -1,9 +1,12 @@
-
+import { currentDayName } from "@/lib/utils/dateUtils";
+import NowPlaying from '@/components/NowPlaying'
+var year = new Date().getFullYear();
 export default function Footer() {
 
   return (
 
-    <div className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+    <footer className="text-gray-600 dark:text-gray-300">
+      <div className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
 
       <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
 
@@ -15,7 +18,7 @@ export default function Footer() {
 
             aria-label="Go home"
 
-            title="Company"
+            title="Kapil Chaudhary"
 
             className="inline-flex items-center"
 
@@ -51,9 +54,9 @@ export default function Footer() {
 
             </svg>
 
-            <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
+            <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 dark:text-gray-200 uppercase">
 
-              Company
+              Kapil Chaudhary
 
             </span>
 
@@ -61,7 +64,7 @@ export default function Footer() {
 
           <div className="mt-6 lg:max-w-sm">
 
-            <p className="text-sm text-gray-800">
+            <p className="text-sm text-gray-800 dark:text-gray-300">
 
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
 
@@ -69,7 +72,7 @@ export default function Footer() {
 
             </p>
 
-            <p className="mt-4 text-sm text-gray-800">
+            <p className="mt-4 text-sm text-gray-800 dark:text-gray-300">
 
               Eaque ipsa quae ab illo inventore veritatis et quasi architecto
 
@@ -81,9 +84,9 @@ export default function Footer() {
 
         </div>
 
-        <div className="space-y-2 text-sm">
+        <div className="space-y-2 text-sm dark:text-gray-300">
 
-          <p className="text-base font-bold tracking-wide text-gray-900">
+          <p className="text-base font-bold tracking-wide text-gray-900 dark:text-gray-100">
 
             Contacts
 
@@ -91,21 +94,21 @@ export default function Footer() {
 
           <div className="flex">
 
-            <p className="mr-1 text-gray-800">Phone:</p>
+            <p className="mr-1 dark:text-gray-200 text-gray-800">Phone:</p>
 
             <a
 
-              href="tel:850-123-5021"
+              href="tel:+918178217233"
 
-              aria-label="Our phone"
+              aria-label="phone"
 
-              title="Our phone"
+              title="phone"
 
-              className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
+              className="transition-colors duration-300 text-gray-600 dark:text-gray-400 text-deep-purple-accent-400 hover:text-deep-purple-800 link-underline link-underline-black"
 
             >
 
-              850-123-5021
+            817-821-7233
 
             </a>
 
@@ -113,21 +116,21 @@ export default function Footer() {
 
           <div className="flex">
 
-            <p className="mr-1 text-gray-800">Email:</p>
+            <p className="mr-1 text-gray-800 dark:text-gray-200">Email:</p>
 
             <a
 
-              href="mailto:info@lorem.mail"
+              href="mailto:contact@heykapil.in"
 
-              aria-label="Our email"
+              aria-label="email"
 
-              title="Our email"
+              title="email"
 
-              className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
+              className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800 text-gray-600 dark:text-gray-400 link-underline link-underline-black"
 
             >
 
-              info@lorem.mail
+              contact@heykapil.in
 
             </a>
 
@@ -135,25 +138,25 @@ export default function Footer() {
 
           <div className="flex">
 
-            <p className="mr-1 text-gray-800">Address:</p>
+            <p className="mr-1 text-gray-800 dark:text-gray-200">Address:</p>
 
             <a
 
-              href="https://www.google.com/maps"
+              href="#"
 
               target="_blank"
 
               rel="noopener noreferrer"
 
-              aria-label="Our address"
+              aria-label="address"
 
-              title="Our address"
+              title="address"
 
-              className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
+              className="transition-colors duration-300 text-gray-600 dark:text-gray-400 hover:text-deep-purple-800"
 
             >
 
-              312 Lovely Street, NY
+              Ahmedabad, India
 
             </a>
 
@@ -163,7 +166,7 @@ export default function Footer() {
 
         <div>
 
-          <span className="text-base font-bold tracking-wide text-gray-900">
+          <span className="text-base font-bold tracking-wide text-gray-900 dark:text-gray-100">
 
             Social
 
@@ -225,10 +228,9 @@ export default function Footer() {
 
           <p className="mt-4 text-sm text-gray-500">
 
-            Bacon ipsum dolor amet short ribs pig sausage prosciutto chicken
-
-            spare ribs salami.
-
+          <div className="mb-3 flex">
+          <NowPlaying />
+          </div>
           </p>
 
         </div>
@@ -237,9 +239,9 @@ export default function Footer() {
 
       <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
 
-        <p className="text-sm text-gray-600">
+        <p className="text-sm text-gray-600 dark:text-gray-400">
 
-          © Copyright 2020 Lorem Inc. All rights reserved.
+        &copy;{year} Kapil Chaudhary. Have a good {currentDayName()}!
 
         </p>
 
@@ -249,13 +251,13 @@ export default function Footer() {
 
             <a
 
-              href="/"
+              href="/acks"
 
-              className="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+              className="text-sm rounded py-1 px-2 text-gray-900 sm:py-2 sm:px-3 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 link-underline link-underline-black"
 
             >
 
-              F.A.Q
+              Credits
 
             </a>
 
@@ -265,9 +267,9 @@ export default function Footer() {
 
             <a
 
-              href="/"
+              href="/privacy-policy"
 
-              className="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+              className="text-sm rounded py-1 px-2 text-gray-900 sm:py-2 sm:px-3 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 link-underline link-underline-black"
 
             >
 
@@ -281,9 +283,9 @@ export default function Footer() {
 
             <a
 
-              href="/"
+              href="/terms"
 
-              className="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+              className="text-sm rounded py-1 px-2 text-gray-900 sm:py-2 sm:px-3 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 link-underline link-underline-black"
 
             >
 
@@ -298,6 +300,7 @@ export default function Footer() {
       </div>
 
     </div>
+    </footer>
 
   );
 
