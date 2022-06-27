@@ -18,7 +18,7 @@ const components = {
   instagram: Instagram,
 }
 
-const SocialIcon = ({ kind, href, size = 6 }) => {
+const SocialIcon = ({ kind, href, size = 5 }) => {
   if (!href) return null
 
   const SocialSvg = components[kind]
@@ -32,7 +32,7 @@ const SocialIcon = ({ kind, href, size = 6 }) => {
     >
       <span className="sr-only">{kind}</span>
       <SocialSvg
-        className={`fill-current text-gray-700 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 h-${size} w-${size}`}
+        className={`fill-current text-gray-500 dark:text-gray-500 hover:text-purple-500 dark:hover:text-purple-400 w-${size}`}
       />
     </a>
   )
