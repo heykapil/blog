@@ -33,11 +33,9 @@ export default function Footer() {
 
           </a>
 
-          <div className="mt-6 lg:max-w-sm">
-
+          <div className="mt-4 lg:max-w-sm">
             <p className="text-sm text-gray-800 dark:text-gray-300">
-
-              Thanks for visiting my personal website. Source code is <a href='//github.com/heykapil/blog' target='_blank'>open source</a> on github. It is hosted on Vercel and built using Nextjs. Feel free to reach for any suggestion,idea.           
+              Thanks for visiting my personal website. Source code is <a href='//github.com/heykapil/blog' class='text-primary-500 dark:text-primary-500 link-underline link-underline-black' target='_blank'>open source</a> on github. It is hosted on <a href='//vercel.com' class='text-primary-500 dark:text-primary-500 link-underline link-underline-black' target='_blank'>Vercel</a> and built using <a href='//nextjs.com' class='text-primary-500 dark:text-primary-500 link-underline link-underline-black' target='_blank'>Nextjs</a>. Feel free to reach for any suggestion/idea. <a href='https://github.com/heykapil/blog/issues' class='text-primary-500 dark:text-primary-500 link-underline link-underline-black' target='_blank'>Issues</a>, <a href='https://github.com/heykapil/blog/pulls' class='text-primary-500 dark:text-primary-500 link-underline link-underline-black' target='_blank'>PR</a>           
             </p>
           </div>
 
