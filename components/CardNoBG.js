@@ -23,7 +23,11 @@ const CardNoBG = ({
   const ref = useRef(null)
   const [xys, set] = useState([0, 0, 1])
   const props = useSpring({ xys, config: config.molasses })
-
+  const gradients = {
+    '0': ' from-[#FDE68A] via-[#FCA5A5] to-[#FECACA]',
+    '1': ' from-[#D8B4FE] to-[#818CF8]',
+    '2': ' to-[#6EE7B7] from-[#6EE7F9]',
+  }  
   return (
     <div
       className={`${!onlyImg && mdSize && 'w-full md:w-1/2'} ${className} overflow-hidden`}

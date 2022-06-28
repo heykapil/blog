@@ -7,8 +7,8 @@ export default function Footer() {
 
   return (
 
-    <footer className="text-gray-600 dark:text-gray-300">
-      <div className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+    <footer className="text-gray-600 dark:text-gray-300 max-w-full">
+      <div className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-full md:px-24 lg:px-8">
 
       <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
 

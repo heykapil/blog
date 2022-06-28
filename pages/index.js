@@ -138,7 +138,7 @@ export default function Home({ posts }) {
             )
           })}
         </ul> */}
-        <ul className="flex flex-col gap-10 dark:bg-dark dark:text-gray-200 dark:border-gray-700 md:flex-row">
+        <ul className="flex flex-col gap-10 text-justify dark:text-gray-200 dark:border-gray-700 md:flex-row">
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter, index) => {
             const { slug, date, title, summary, tags, readTime } = frontMatter
