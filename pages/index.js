@@ -67,14 +67,14 @@ export default function Home({ posts }) {
               className="py-4 md:px-4"
             />
             <CardNoBG
-              title='Snippets'
-              description='Some useful snippets collected by me.'
+              title='Quotes'
+              description='Collection of some good short quotes.'
               href={'/snippets'}
               className="py-4 md:px-4"
             />
             <CardNoBG
-              title='About Me'
-              description='Want to know more about me?'
+              title='Books'
+              description='Take a look into my library.'
               href={'/about'}
               className="py-4 md:px-4"
             />
@@ -172,7 +172,7 @@ export default function Home({ posts }) {
                             ))}
                           </div>
                         </div>
-                        <div className="prose text-gray-500 max-w-none dark:text-gray-400 border-b border-gray-200 dark:border-gray-700">
+                        <div className="prose text-gray-500 max-w-none dark:text-gray-400">
                           {summary}
                         </div>
                       </div>
@@ -201,7 +201,7 @@ export default function Home({ posts }) {
                         </svg>
                         {readTime}
                       </div>
-                      <div className="text-base items-end font-medium leading-6">
+                      <div className="text-base align-right font-medium leading-6">
                         <Link
                           href={`/blog/${slug}`}
                           className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 link-underline link-underline-black"
