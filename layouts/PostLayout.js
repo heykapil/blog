@@ -42,7 +42,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, pag
               className="rounded-full"
             />
             <p className="ml-2 text-sm text-gray-700 dark:text-gray-300">
-              {'Kapil Chaudhary / '}
+              {'Kapil Chaudhary/ '}
               {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)} /
               {readingTimeText.replace('min', 'mins')}
             </p>
