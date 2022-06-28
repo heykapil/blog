@@ -57,25 +57,25 @@ export default function Home({ posts }) {
             <CardNoBG
               title='Research'
               description='Know more about my interests and published papers.'
-              href={'/projects'}
+              href={'/research'}
               className="py-4 md:px-4"
             />
             <CardNoBG
               title='Teaching'
               description='Know more about the courses that i have taught.'
-              href={'/teaching'}
+              href={'/teachings'}
               className="py-4 md:px-4"
             />
             <CardNoBG
               title='Quotes'
               description='Collection of some good short quotes.'
-              href={'/snippets'}
+              href={'/quotes'}
               className="py-4 md:px-4"
             />
             <CardNoBG
               title='Books'
               description='Take a look into my library.'
-              href={'/about'}
+              href={'/books'}
               className="py-4 md:px-4"
             />
             </div>
