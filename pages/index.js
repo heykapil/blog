@@ -156,9 +156,9 @@ export default function Home({ posts }) {
                   }
                 ></div>
                 <article className="relative h-full rounded-xl bg-background-color">
-                  <div className="flex h-full flex-col justify-between rounded-xl bg-white p-5 dark:bg-dark">
+                  <div className="flex h-full flex-col justify-between rounded-xl bg-white p-6 dark:bg-dark">
                     <div className="flex flex-col justify-between space-y-5 md:flex-row xl:col-span-3">
-                      <div className="space-y-6">
+                      <div className="space-y-8">
                         <div>
                         <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
                         <time dateTime={date}>{formatDate(date)}</time>
@@ -177,7 +177,7 @@ export default function Home({ posts }) {
                         </div>
                       </div>
                     </div>
-                    <div className="mt-3 flex space-x-12">
+                    <div className="mt-3 flex mx-auto gap-12 content-start">
                       <div className="capsize flex items-center text-gray-800 dark:text-gray-200">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -201,7 +201,7 @@ export default function Home({ posts }) {
                         </svg>
                         {readTime}
                       </div>
-                      <div className="text-base align-right font-medium leading-6">
+                      <div className="text-base align-right font-medium leading-6 content-end">
                         <Link
                           href={`/blog/${slug}`}
                           className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 link-underline link-underline-black"
