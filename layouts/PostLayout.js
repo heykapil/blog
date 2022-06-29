@@ -37,22 +37,20 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, pag
           <div className="flex items-center">
            <Image
               alt="Kapil Chaudhary"
-              height={24}
-              width={24}
+              height={22}
+              width={22}
               src="/static/images/logo.jpg"
               className="rounded-full"
-            />
-            <p className="ml-2 text-sm text-gray-700 dark:text-gray-300">
-              {'Kapil Chaudhary/ '}
-              {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)} /
-              {readingTimeText.replace('min', 'mins')}
-            </p>
+            /><p className="ml-2 text-sm text-gray-700 dark:text-gray-300">
+              {'Kapil Chaudhary / '}
+              {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
+            </p> </div>
+            <p className="mt-2 text-sm text-gray-600 dark:text-gray-400 min-w-32 md:mt-0">
+          {readingTimeText.replace('min', 'mins')}
+            {` • `}
+            <ViewCounter className="text-sm" slug={slug} />
+          </p>
           </div>
-          <div className="flex items-center">
-                      <Twemoji emoji="eye" size="" />
-                      <ViewCounter className="ml-1.5 md:ml-2" slug={slug} />
-                    </div>
-        </div>
         <div className="w-full mt-4 prose dark:prose-dark max-w-none">
           {children}
         </div>

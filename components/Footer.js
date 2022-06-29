@@ -2,6 +2,7 @@ import { currentDayName } from "@/lib/utils/dateUtils";
 import NowPlaying from '@/components/NowPlaying';
 import siteMetadata from '@/data/siteMetadata'
 import SocialIcon from '@/components/social-icons'
+import Link from "next/link";
 var year = new Date().getFullYear();
 export default function Footer() {
 
@@ -75,7 +76,7 @@ export default function Footer() {
 
             <p className="mr-1 text-gray-800 dark:text-gray-200">Email:</p>
 
-            <a
+            <Link
 
               href="mailto:contact@heykapil.in"
 
@@ -89,7 +90,7 @@ export default function Footer() {
 
               contact@heykapil.in
 
-            </a>
+            </Link>
 
           </div>
 
@@ -97,7 +98,7 @@ export default function Footer() {
 
             <p className="mr-1 text-gray-800 dark:text-gray-200">Address:</p>
 
-            <a
+            <Link
 
               href="#"
 
@@ -115,7 +116,7 @@ export default function Footer() {
 
               Ahmedabad, India
 
-            </a>
+            </Link>
 
           </div>
 

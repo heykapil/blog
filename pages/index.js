@@ -8,15 +8,17 @@ import TypedBios from '@/components/TypedBios'
 import siteMetadata from '@/data/siteMetadata'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import formatDate from '@/lib/utils/formatDate'
+import ViewCounter from '@/components/ViewCounter'
 import CardNoBG from '@/components/CardNoBG'
 import Card from '@/components/Card'
+import useSWR from 'swr';
+import fetcher from 'lib/fetcher';
 const gradients = {
   '0': ' from-[#FDE68A] via-[#FCA5A5] to-[#FECACA]',
   '1': ' from-[#D8B4FE] to-[#818CF8]',
   '2': ' to-[#6EE7B7] from-[#6EE7F9]',
 }
 const MAX_DISPLAY = 3
-
 export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter('blog')
 
@@ -142,6 +144,8 @@ export default function Home({ posts }) {
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter, index) => {
             const { slug, date, title, summary, tags, readTime } = frontMatter
+            const { data } = useSWR(`/api/views/${slug}`, fetcher);
+            const views = data?.total;
             console.log(index)
             return (
               <Link
@@ -182,16 +186,32 @@ export default function Home({ posts }) {
 width="20" height="20"
 viewBox="0 0 30 30"
 fill="currentColor"><path d="M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s12-5.373,12-12C27,8.373,21.627,3,15,3z M16,16H7.995 C7.445,16,7,15.555,7,15.005v-0.011C7,14.445,7.445,14,7.995,14H14V5.995C14,5.445,14.445,5,14.995,5h0.011 C15.555,5,16,5.445,16,5.995V16z"></path></svg>
-</div><div className='mr-auto'>{readTime}</div>
-                      <div className="text-base font-medium leading-6">
-                        <Link
-                          href={`/blog/${slug}`}
-                          className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 link-underline link-underline-black"
-                          aria-label={`Read "${title}"`}
-                        >
-                          Read more &rarr;
-                        </Link>
-                        </div>
+</div><div className='flex'>{readTime}</div>
+<div className="flex ml-auto text-gray-800 dark:text-gray-200 capsize">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="20" width="20"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+              />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+              />
+            </svg>
+            <span className="ml-1 align-sub capsize">
+              {views ? new Number(views).toLocaleString() : '–––'} views
+            </span>
+          </div>
                     </div>
                   </div>
                 </article>
