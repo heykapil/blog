@@ -18,6 +18,12 @@ export default function NowPlaying() {
       <div className="ml-2 flex-auto inline-flex group">
         {data?.songUrl ? (
           <>
+            <div className="h-5 flex items-end mr-2 pt-1 pb-0.5">
+              <div className="bg-[#1DB954] w-0.5 h-full animate-music-play-1"></div>
+              <div className="bg-[#1DB954] mx-0.5 w-0.5 h-1/2 animate-music-play-2"></div>
+              <div className="bg-[#1DB954] w-0.5 h-full animate-music-play-3"></div>
+              <div className="bg-[#1DB954] mx-0.5 w-0.5 h-1/2 animate-music-play-4"></div>
+            </div>
             <div className='overflow-hidden'>
             <a
               className="font-medium text-gray-800 dark:text-gray-200"
@@ -31,10 +37,10 @@ export default function NowPlaying() {
             </div>
           </>
         ) : (
-          <p className="text-gray-800 dark:text-gray-200 font-medium truncate">Not Playing</p>
+          <p className="text-gray-800 dark:text-gray-200 font-medium">Not Playing</p>
         )}
          <span className="hidden group-hover:block mx-2 text-gray-800 dark:text-gray-200">{' – '}</span>
-         <p className="hidden group-hover:block text-gray-800 dark:text-gray-200 max-w-max"> {data?.artist ?? 'Spotify'}</p>
+         <p className="hidden ml-auto group-hover:block text-gray-800 dark:text-gray-200 max-w-max"> {data?.artist ?? 'Spotify'}</p>
       </div>
     </div>
   )

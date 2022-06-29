@@ -16,6 +16,89 @@ module.exports = {
   theme: {
     extend: {
       keyframes: {
+        shrink: {
+          '0% , 100%': {
+            height: '0.75rem',
+          },
+          '50%': {
+            height: '0.375rem',
+          },
+        },
+        'bg-hue-animation': {
+          '0%': { filter: 'hue-rotate(0deg)' },
+          '50%': { filter: 'hue-rotate(180deg)' },
+          '100%': { filter: 'hue-rotate(0deg)' },
+        },
+        'fade-away': {
+          '0%': {
+            opacity: 1,
+          },
+          '100%': {
+            opacity: 0.2,
+          },
+        },
+        expand: {
+          '0% , 100%': {
+            height: '0.375rem',
+          },
+          '50%': {
+            height: '0.75rem',
+          },
+        },
+        'gradient-foreground-1': {
+          '0%, 16.667%, 100%': {
+            opacity: 1,
+          },
+          '33.333%, 83.333%': {
+            opacity: 0,
+          },
+        },
+        'gradient-background-1': {
+          '0%, 16.667%, 100%': {
+            opacity: 0,
+          },
+          '25%, 91.667%': {
+            opacity: 1,
+          },
+        },
+        'gradient-foreground-2': {
+          '0%, 100%': {
+            opacity: 0,
+          },
+          '33.333%, 50%': {
+            opacity: 1,
+          },
+          '16.667%, 66.667%': {
+            opacity: 0,
+          },
+        },
+        'gradient-background-2': {
+          '0%, to': {
+            opacity: 1,
+          },
+          '33.333%, 50%': {
+            opacity: 0,
+          },
+          '25%, 58.333%': {
+            opacity: 1,
+          },
+        },
+        'gradient-foreground-3': {
+          '0%, 50%, 100%': {
+            opacity: 0,
+          },
+          '66.667%, 83.333%': {
+            opacity: 1,
+          },
+        },
+        'gradient-background-3': {
+          '0%, 58.333%, 91.667%, 100%': {
+            opacity: 1,
+          },
+          '66.667%, 83.333%': {
+            opacity: 0,
+          },
+        },
         wiggle: {
           '0%': { transform: 'rotate(0deg)' },
           '50%': { transform: 'rotate(180deg)' },
@@ -47,6 +130,18 @@ module.exports = {
         'music-play-2': 'music-play-2 .8s linear infinite',
         'music-play-3': 'music-play-3 .8s linear infinite',
         'music-play-4': 'music-play-4 .8s linear infinite',
+        shrink: 'shrink 1.5s infinite',
+        expand: 'expand 1.5s infinite',
+        'fade-text': '10s ease-in-out 3s 1 normal forwards running fade-away',
+        shrink: 'shrink ease-in-out 1.5s infinite',
+        expand: 'expand ease-in-out 1.5s infinite',
+        'hue-animation': 'bg-hue-animation 10s infinite',
+        'gradient-background-1': 'gradient-background-1 8s infinite',
+        'gradient-foreground-1': 'gradient-foreground-1 8s infinite',
+        'gradient-background-2': 'gradient-background-2 8s infinite',
+        'gradient-foreground-2': 'gradient-foreground-2 8s infinite',
+        'gradient-background-3': 'gradient-background-3 8s infinite',
+        'gradient-foreground-3': 'gradient-foreground-3 8s infinite',
       },
       spacing: {
         '9/16': '56.25%',
@@ -223,105 +318,6 @@ module.exports = {
           },
         },
       }),
-      keyframes: {
-        shrink: {
-          '0% , 100%': {
-            height: '0.75rem',
-          },
-          '50%': {
-            height: '0.375rem',
-          },
-        },
-        'bg-hue-animation': {
-          '0%': { filter: 'hue-rotate(0deg)' },
-          '50%': { filter: 'hue-rotate(180deg)' },
-          '100%': { filter: 'hue-rotate(0deg)' },
-        },
-        'fade-away': {
-          '0%': {
-            opacity: 1,
-          },
-          '100%': {
-            opacity: 0.2,
-          },
-        },
-        expand: {
-          '0% , 100%': {
-            height: '0.375rem',
-          },
-          '50%': {
-            height: '0.75rem',
-          },
-        },
-        'gradient-foreground-1': {
-          '0%, 16.667%, 100%': {
-            opacity: 1,
-          },
-          '33.333%, 83.333%': {
-            opacity: 0,
-          },
-        },
-        'gradient-background-1': {
-          '0%, 16.667%, 100%': {
-            opacity: 0,
-          },
-          '25%, 91.667%': {
-            opacity: 1,
-          },
-        },
-        'gradient-foreground-2': {
-          '0%, 100%': {
-            opacity: 0,
-          },
-          '33.333%, 50%': {
-            opacity: 1,
-          },
-          '16.667%, 66.667%': {
-            opacity: 0,
-          },
-        },
-        'gradient-background-2': {
-          '0%, to': {
-            opacity: 1,
-          },
-          '33.333%, 50%': {
-            opacity: 0,
-          },
-          '25%, 58.333%': {
-            opacity: 1,
-          },
-        },
-        'gradient-foreground-3': {
-          '0%, 50%, 100%': {
-            opacity: 0,
-          },
-          '66.667%, 83.333%': {
-            opacity: 1,
-          },
-        },
-        'gradient-background-3': {
-          '0%, 58.333%, 91.667%, 100%': {
-            opacity: 1,
-          },
-          '66.667%, 83.333%': {
-            opacity: 0,
-          },
-        },
-      },
-      animation: {
-        shrink: 'shrink 1.5s infinite',
-        expand: 'expand 1.5s infinite',
-        'fade-text': '10s ease-in-out 3s 1 normal forwards running fade-away',
-        shrink: 'shrink ease-in-out 1.5s infinite',
-        expand: 'expand ease-in-out 1.5s infinite',
-        'hue-animation': 'bg-hue-animation 10s infinite',
-        'gradient-background-1': 'gradient-background-1 8s infinite',
-        'gradient-foreground-1': 'gradient-foreground-1 8s infinite',
-        'gradient-background-2': 'gradient-background-2 8s infinite',
-        'gradient-foreground-2': 'gradient-foreground-2 8s infinite',
-        'gradient-background-3': 'gradient-background-3 8s infinite',
-        'gradient-foreground-3': 'gradient-foreground-3 8s infinite',
-      },
     },
   },
   variants: {
