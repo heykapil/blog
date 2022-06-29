@@ -1,6 +1,7 @@
 import Comments from '@/components/comments'
 import Image from '@/components/Image'
 import Link from '@/components/Link'
+import ViewCounter from '@/components/ViewCounter'
 import PageTitle from '@/components/PageTitle'
 import ScrollTop from '@/components/ScrollTop'
 import SectionContainer from '@/components/SectionContainer'
@@ -47,7 +48,10 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, pag
               {readingTimeText.replace('min', 'mins')}
             </p>
           </div>
-          
+          <div className="flex items-center">
+                      <Twemoji emoji="eye" size="" />
+                      <ViewCounter className="ml-1.5 md:ml-2" slug={slug} />
+                    </div>
         </div>
         <div className="w-full mt-4 prose dark:prose-dark max-w-none">
           {children}
