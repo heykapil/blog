@@ -13,8 +13,10 @@ import Analytics from '@/components/analytics'
 import LayoutWrapper from '@/components/LayoutWrapper'
 import Extra from '@/components/Extra'
 import NProgress from 'nprogress';
+import { SessionProvider } from 'next-auth/react';
 
-NProgress.configure({ showSpinner: false });
+
+NProgress.configure({ showSpinner: true });
 
 Router.onRouteChangeStart = () => {
   // console.log('onRouteChangeStart triggered');
@@ -31,7 +33,7 @@ Router.onRouteChangeError = () => {
   NProgress.done();
 };
 
-export default function App({ Component, pageProps }) {
+export default function App({ Component, pageProps: { session, ...pageProps }, }) {
   
   useEffect(() => {
     renderMathInElement(document.body, {
@@ -52,6 +54,7 @@ export default function App({ Component, pageProps }) {
   }, [Component])
 
   return (
+    <SessionProvider session={session}>
     <ThemeProvider attribute="class">
       <Head>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
@@ -62,5 +65,6 @@ export default function App({ Component, pageProps }) {
         </LayoutWrapper>
       <Extra />
     </ThemeProvider>
+    </SessionProvider>
   )
 }
