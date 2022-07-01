@@ -33,7 +33,7 @@ Router.onRouteChangeError = () => {
   NProgress.done();
 };
 
-export default function App({ Component, pageProps: { session, ...pageProps }, }) {
+export default function App({ Component, pageProps }) {
   
   useEffect(() => {
     renderMathInElement(document.body, {
