@@ -1,4 +1,4 @@
-import { useState, useRef, Suspense } from 'react';
+import { useState, useRef } from 'react';
 import { format } from 'date-fns';
 import { signIn, useSession } from 'next-auth/react';
 import useSWR, { useSWRConfig } from 'swr';
@@ -56,7 +56,7 @@ export default function Guestbook({ fallbackData }) {
 
   const leaveEntry = async (e) => {
     e.preventDefault();
-    ;
+    setForm({ state: 'loading' });
 
     const res = await fetch('/api/guestbook', {
       body: JSON.stringify({
@@ -71,7 +71,7 @@ export default function Guestbook({ fallbackData }) {
     const { error } = await res.json();
     if (error) {
       setForm({
-        state: false,
+        state: 'error',
         message: error
       });
       return;
@@ -80,14 +80,14 @@ export default function Guestbook({ fallbackData }) {
     inputEl.current.value = '';
     mutate('/api/guestbook');
     setForm({
-      state: true,
+      state: 'success',
       message: `Hooray! Thanks for signing my Guestbook.`
     });
   };
 
   return (
     <>
-      <div className="border border-blue-200 rounded p-6 my-4 w-full dark:border-gray-800 bg-blue-50 dark:bg-dark">
+      <div className="border border-blue-200 rounded p-6 my-4 w-full dark:border-gray-800 bg-blue-50 dark:bg-blue-opaque">
         <h5 className="text-lg md:text-xl font-bold text-gray-900 dark:text-gray-100">
           Sign the Guestbook
         </h5>
@@ -98,7 +98,7 @@ export default function Guestbook({ fallbackData }) {
           // eslint-disable-next-line @next/next/no-html-link-for-pages
           <a
             href="/api/auth/signin/github"
-            className="flex items-center justify-center my-4 font-bold h-8 bg-gray-200 dark:bg-gray-700 dark:text-gray-100 text-gray-900 rounded w-28"
+            className="flex items-center justify-center my-4 font-bold h-8 bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-gray-100 rounded w-28"
             onClick={(e) => {
               e.preventDefault();
               signIn('github');
@@ -119,11 +119,22 @@ export default function Guestbook({ fallbackData }) {
             <button
               className="flex items-center justify-center absolute right-1 top-1 px-4 pt-1 font-medium h-8 bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-100 rounded w-28"
               type="submit"
-            >Submit
+            >
+              {form.state === 'loading' ? <LoadingSpinner /> : 'Sign'}
             </button>
           </form>
         )}
-     </div>
+        {form.state === 'error' ? (
+          <ErrorMessage>{form.message}</ErrorMessage>
+        ) : form.state === 'success' ? (
+          <SuccessMessage>{form.message}</SuccessMessage>
+        ) : (
+          <p className="text-sm text-gray-800 dark:text-gray-200">
+            Your information is only used to display your name and reply by
+            email.
+          </p>
+        )}
+      </div>
       <div className="mt-4 space-y-8">
           {entries?.map((entry) => (
             <GuestbookEntry key={entry.id} entry={entry} user={session?.user} />

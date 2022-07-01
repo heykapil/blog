@@ -54,17 +54,18 @@ export default function App({ Component, pageProps: { session, ...pageProps }, }
   }, [Component])
 
   return (
-    <SessionProvider session={session}>
     <ThemeProvider attribute="class">
       <Head>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
       <Analytics />
       <LayoutWrapper>
+      <SessionProvider session={session}>
         <Component {...pageProps} />
-        </LayoutWrapper>
+      </SessionProvider>
+      </LayoutWrapper>
       <Extra />
     </ThemeProvider>
-    </SessionProvider>
+    
   )
 }
