@@ -13,7 +13,7 @@ import Analytics from '@/components/analytics'
 import LayoutWrapper from '@/components/LayoutWrapper'
 import Extra from '@/components/Extra'
 import NProgress from 'nprogress';
-
+import { SessionProvider } from 'next-auth/react';
 
 NProgress.configure({ showSpinner: true });
 
@@ -32,28 +32,14 @@ Router.onRouteChangeError = () => {
   NProgress.done();
 };
 
-export default function App({ Component, pageProps }) {
+export default function App({
+  Component,
+  pageProps: { session, ...pageProps },
+}) {
+  return (  
   
-  useEffect(() => {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: "$$", right: "$$", display: true},
-        {left: "\\(", right: "\\)", display: false},
-        {left: "\\begin{equation}", right: "\\end{equation}", display: true},
-        {left: "\\begin{align}", right: "\\end{align}", display: true},
-        {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
-        {left: "\\begin{gather}", right: "\\end{gather}", display: true},
-        {left: "\\begin{CD}", right: "\\end{CD}", display: true},
-        {left: "\\[", right: "\\]", display: true},
-        {left: "$", right: "$", display: true}
-    ],
-    // rendering keys
-    throwOnError : false
-    });
-  }, [Component])
-
-  return (
-    <ThemeProvider attribute="class">
+    <SessionProvider session={session}>
+      <ThemeProvider attribute="class">
       <Head>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
@@ -62,7 +48,8 @@ export default function App({ Component, pageProps }) {
         <Component {...pageProps} />
       </LayoutWrapper>
       <Extra />
-    </ThemeProvider>
-    
+      </ThemeProvider>
+    </SessionProvider>
+      
   )
 }
