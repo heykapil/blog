@@ -60,9 +60,7 @@ export default function App({ Component, pageProps }) {
       </Head>
       <Analytics />
       <LayoutWrapper>
-      <SessionProvider session={pageProps.session}>
         <Component {...pageProps} />
-      </SessionProvider>
       </LayoutWrapper>
       <Extra />
     </ThemeProvider>
