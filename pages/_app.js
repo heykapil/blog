@@ -13,7 +13,6 @@ import Analytics from '@/components/analytics'
 import LayoutWrapper from '@/components/LayoutWrapper'
 import Extra from '@/components/Extra'
 import NProgress from 'nprogress';
-import { SessionProvider } from 'next-auth/react';
 
 
 NProgress.configure({ showSpinner: true });
