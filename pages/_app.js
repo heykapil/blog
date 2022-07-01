@@ -4,8 +4,6 @@ import '@/css/extra.css'
 import '@/css/prism.css'
 import '@/css/twemoji.css'
 import '@/css/timeline.css'
-import renderMathInElement from 'katex/dist/contrib/auto-render.min.js'
-import { useEffect } from 'react'
 import { ThemeProvider } from 'next-themes'
 import Head from 'next/head'
 import Router from 'next/router';
@@ -32,24 +30,20 @@ Router.onRouteChangeError = () => {
   NProgress.done();
 };
 
-export default function App({
-  Component,
-  pageProps: { session, ...pageProps },
-}) {
-  return (  
-  
-    <SessionProvider session={session}>
-      <ThemeProvider attribute="class">
-      <Head>
-        <meta content="width=device-width, initial-scale=1" name="viewport" />
-      </Head>
-      <Analytics />
-      <LayoutWrapper>
-        <Component {...pageProps} />
-      </LayoutWrapper>
-      <Extra />
+export default function App({ Component, pageProps }) {
+    return ( 
+      <SessionProvider session={pageProps.session}>
+        <ThemeProvider attribute="class">
+        <Head>
+          <meta content="width=device-width, initial-scale=1" name="viewport" />
+        </Head>
+        <Analytics />
+        <LayoutWrapper>
+          <Component {...pageProps} />
+        </LayoutWrapper>
+        <Extra />
       </ThemeProvider>
-    </SessionProvider>
-      
+      </SessionProvider>
+
   )
 }
