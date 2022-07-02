@@ -2,7 +2,7 @@ import { currentDayName } from "@/lib/utils/dateUtils";
 import NowPlaying from '@/components/NowPlaying';
 import siteMetadata from '@/data/siteMetadata'
 import SocialIcon from '@/components/social-icons'
-import Link from "next/link";
+import Link from "@/components/Link";
 var year = new Date().getFullYear();
 export default function Footer() {
 
