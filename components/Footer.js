@@ -15,9 +15,9 @@ export default function Footer() {
 
         <div className="sm:col-span-2">
 
-          <Link
+          <a
 
-            href="#"
+            href="/"
 
             aria-label="Go home"
 
@@ -32,11 +32,11 @@ export default function Footer() {
 
             </span>
 
-          </Link>
+          </a>
 
           <div className="mt-4 lg:max-w-sm">
             <p className="text-sm text-gray-800 dark:text-gray-300">
-              Thanks for visiting my personal website. The code is <Link href='https://github.com/heykapil/blog' className='text-primary-500 dark:text-primary-500 link-underline link-underline-black' target='_blank'>open source</Link> on github. It is hosted on <Link href='https://vercel.com' className='text-primary-500 dark:text-primary-500 link-underline link-underline-black' target='_blank'>Vercel</Link> and built using <Link href='https://nextjs.org' className='text-primary-500 dark:text-primary-500 link-underline link-underline-black' target='_blank'>Nextjs</Link>. Feel free to open any <Link href='https://github.com/heykapil/blog/issues' className='text-primary-500 dark:text-primary-500 link-underline link-underline-black' target='_blank'>issue</Link> or <Link href='https://github.com/heykapil/blog/pulls' className='text-primary-500 dark:text-primary-500 link-underline link-underline-black' target='_blank'>PR</Link>.           
+              Thanks for visiting my personal website. The code is <a href='//github.com/heykapil/blog' class='text-primary-500 dark:text-primary-500 link-underline link-underline-black' target='_blank'>open source</a> on github. It is hosted on <a href='//vercel.com' class='text-primary-500 dark:text-primary-500 link-underline link-underline-black' target='_blank'>Vercel</a> and built using <a href='//nextjs.com' class='text-primary-500 dark:text-primary-500 link-underline link-underline-black' target='_blank'>Nextjs</a>. Feel free to open any <a href='https://github.com/heykapil/blog/issues' class='text-primary-500 dark:text-primary-500 link-underline link-underline-black' target='_blank'>issue</a> or <a href='https://github.com/heykapil/blog/pulls' class='text-primary-500 dark:text-primary-500 link-underline link-underline-black' target='_blank'>PR</a>.           
             </p>
           </div>
 
@@ -54,7 +54,7 @@ export default function Footer() {
 
             <p className="mr-1 dark:text-gray-200 text-gray-800">Phone:</p>
 
-            <Link
+            <a
 
               href="tel:+918178217233"
 
@@ -68,7 +68,7 @@ export default function Footer() {
 
             817-821-7233
 
-            </Link>
+            </a>
 
           </div>
 
@@ -139,9 +139,12 @@ export default function Footer() {
           <SocialIcon kind="linkedin" href={siteMetadata.linkedin} />
           </div>
 
-          <div className="mt-4 text-sm text-gray-500">
+          <p className="mt-4 text-sm text-gray-500">
+
+          <div className="mb-3 flex">
           <NowPlaying />
           </div>
+          </p>
 
         </div>
 
@@ -159,7 +162,7 @@ export default function Footer() {
 
           <li>
 
-            <Link
+            <a
 
               href="/acks"
 
@@ -169,13 +172,13 @@ export default function Footer() {
 
               Credits
 
-            </Link>
+            </a>
 
           </li>
 
           <li>
 
-            <Link
+            <a
 
               href="/privacy-policy"
 
@@ -185,13 +188,13 @@ export default function Footer() {
 
               Privacy Policy
 
-            </Link>
+            </a>
 
           </li>
 
           <li>
 
-            <Link
+            <a
 
               href="/terms"
 
@@ -201,7 +204,7 @@ export default function Footer() {
 
               Terms &amp; Conditions
 
-            </Link>
+            </a>
 
           </li>
 
