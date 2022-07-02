@@ -4,30 +4,44 @@ import '@/css/extra.css'
 import '@/css/prism.css'
 import '@/css/twemoji.css'
 import '@/css/timeline.css'
+import renderMathInElement from 'katex/dist/contrib/auto-render.min.js'
+import { useEffect } from 'react'
 import { ThemeProvider } from 'next-themes'
 import Head from 'next/head'
-import Router , { useRouter } from 'next/router'
+import Router from 'next/router';
 import Analytics from '@/components/analytics'
 import LayoutWrapper from '@/components/LayoutWrapper'
 import Extra from '@/components/Extra'
 import NProgress from 'nprogress';
-function App({ Component, pageProps }) {
-  return (
-    <>
-      <ThemeProvider attribute="class">
-        <Head>
-        <meta
-              name="viewport"
-              content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover"
-            />
-        </Head>
-        <Analytics />
-        <LayoutWrapper>
-          <Component {...pageProps} />
-        </LayoutWrapper>
-      </ThemeProvider>
-    </>
 
+NProgress.configure({ showSpinner: false });
+
+Router.onRouteChangeStart = () => {
+  // console.log('onRouteChangeStart triggered');
+  NProgress.start();
+};
+
+Router.onRouteChangeComplete = () => {
+  // console.log('onRouteChangeComplete triggered');
+  NProgress.done();
+};
+
+Router.onRouteChangeError = () => {
+  // console.log('onRouteChangeError triggered');
+  NProgress.done();
+};
+
+export default function App({ Component, pageProps }) {
+  return (
+    <ThemeProvider attribute="class">
+      <Head>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+      </Head>
+      <Analytics />
+      <LayoutWrapper>
+        <Component {...pageProps} />
+        </LayoutWrapper>
+      <Extra />
+    </ThemeProvider>
   )
 }
-export default App;
