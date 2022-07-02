@@ -15,6 +15,7 @@ import { SessionProvider } from 'next-auth/react';
 
 
 function App({ Component, pageProps }) {
+  const router = useRouter();
   const { session, ...rest } = pageProps;
   return (
     <>
@@ -30,7 +31,6 @@ function App({ Component, pageProps }) {
         <LayoutWrapper>
           <Component {...rest} />
         </LayoutWrapper>
-        <Extra />
       </SessionProvider>
       </ThemeProvider>
     </>
