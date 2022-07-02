@@ -1,7 +1,6 @@
-import { SessionProvider } from 'next-auth/react';
 import { useState, useRef } from 'react';
 import { format } from 'date-fns';
-import { signIn, useSession } from 'next-auth/react';
+import { signIn, useSession } from 'next-auth/client';
 import useSWR, { useSWRConfig } from 'swr';
 import fetcher from '@/lib/fetcher';
 import SuccessMessage from '@/components/SuccessMessage';
