@@ -11,16 +11,10 @@ import Analytics from '@/components/analytics'
 import LayoutWrapper from '@/components/LayoutWrapper'
 import Extra from '@/components/Extra'
 import NProgress from 'nprogress';
-import { SessionProvider } from 'next-auth/react';
-
-
 function App({ Component, pageProps }) {
-  const router = useRouter();
-  const { session, ...rest } = pageProps;
   return (
     <>
       <ThemeProvider attribute="class">
-        <SessionProvider session={session}>
         <Head>
         <meta
               name="viewport"
@@ -29,9 +23,8 @@ function App({ Component, pageProps }) {
         </Head>
         <Analytics />
         <LayoutWrapper>
-          <Component {...rest} />
+          <Component {...pageProps} />
         </LayoutWrapper>
-      </SessionProvider>
       </ThemeProvider>
     </>
 
