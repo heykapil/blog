@@ -34,10 +34,7 @@ export default function App({ Component, pageProps }) {
       <Provider session={pageProps.session}>
       {Component.auth ? (
         <Auth>
-          <Component {...pageProps} />
-        </Auth>
-      ) : (
-        <ThemeProvider attribute="class">
+          <ThemeProvider attribute="class">
         <Head>
           <meta content="width=device-width, initial-scale=1" name="viewport" />
         </Head>
@@ -47,6 +44,9 @@ export default function App({ Component, pageProps }) {
         </LayoutWrapper>
         <Extra />
       </ThemeProvider>
+        </Auth>
+      ) : (
+          <Component {...pageProps} />
       )}
     </Provider>
 
