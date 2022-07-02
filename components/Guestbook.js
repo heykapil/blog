@@ -1,4 +1,3 @@
-import { SessionProvider } from 'next-auth/react';
 import { useState, useRef } from 'react';
 import { format } from 'date-fns';
 import { signIn, useSession } from 'next-auth/react';
