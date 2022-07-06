@@ -3,6 +3,7 @@ import Pagination from '@/components/Pagination'
 import Tag from '@/components/Tag'
 import formatDate from '@/lib/utils/formatDate'
 import { useState } from 'react'
+import Image from 'next/image'
 
 export default function ListLayout({ posts, title, initialDisplayPosts = [], pagination }) {
   const [searchValue, setSearchValue] = useState('')
@@ -35,7 +36,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
               className="block w-full px-4 py-2 text-gray-900 bg-white border border-gray-200 rounded-md dark:border-gray-900 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:text-gray-100"
             />
             <svg
-              className="absolute w-5 h-5 text-gray-400 right-9 top-3 dark:text-gray-300"
+              className="absolute w-5 h-5 text-gray-400 right-3 top-3 dark:text-gray-300"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
@@ -48,7 +49,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
                 d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
               />
             </svg>
-            <span className="absolute w-5 h-5 text-gray-400 right-3 top-3 dark:text-gray-300">
+            <span className="absolute w-5 h-5 text-gray-400 right-9 top-3 dark:text-gray-300">
             <Link href="/tags"><Image src="/static/images/tag.svg" /></Link>
             </span>
           </div>
