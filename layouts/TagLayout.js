@@ -26,7 +26,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
           <p className="mb-4 text-gray-600 dark:text-gray-400">
           These are the posts for the tag {title} throughout the blog. Search to filter out using name of the article.
         </p>
-          <div className="relative flex w-full">
+          <div className="relative input-group flex w-full">
             <input
               aria-label="Search articles"
               type="text"
@@ -34,14 +34,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
               placeholder="Search articles"
               className="block flex w-full px-4 py-2 text-gray-900 bg-white border border-gray-200 rounded-md dark:border-gray-900 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:text-gray-100"
             />
-          <Link class="flex items-center justify-center px-4 border-l" href="/tags" >
-           <Image
-           src="/static/images/tag.svg"
-           alt="Tags"
-           width={24}
-           height={24}
-           />
-           </Link>
+          <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16"><defs><linearGradient id="ataglinear"><stop offset="0%" stopColor="#000092"/><stop offset="100%" stopColor="#ff00f3"/></linearGradient><linearGradient id="btaglinear" x1="3" x2="11" y1="8" y2="8" gradientUnits="userSpaceOnUse" xlinkXhref="#ataglinear"/></defs><path fill="url(#btaglinear)" d="m 4.597,14.712958 2.92,-2.345896 c 0.253,-0.202374 0.713,-0.202374 0.965,0 l 2.922,2.345896 C 11.639,14.902943 11.888,15 12.124,15 c 0.127,0 0.249,-0.02891 0.363,-0.0857 C 12.813,14.749097 13,14.381518 13,13.906557 L 13,2.5487868 C 13,1.694889 12.327,1 11.5,1 l -7,0 C 3.673,1 3,1.694889 3,2.5487868 L 3,13.906557 c 0,0.474961 0.187,0.841507 0.512,1.006711 0.324,0.164171 0.72,0.09086 1.085,-0.20031 z M 4,2.5487868 C 4,2.26381 4.224,2.0325245 4.5,2.0325245 l 7,0 c 0.275,0 0.5,0.2312855 0.5,0.5162623 L 12,13.883841 9.096,11.551368 c -0.613,-0.492514 -1.577,-0.492514 -2.192,0 L 4,13.883841 4,2.5487868 Z"/></svg>
           </div>
         </div>
         <ul>
