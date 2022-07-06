@@ -26,15 +26,15 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
           <p className="mb-4 text-gray-600 dark:text-gray-400">
           These are the posts for the tag {title} throughout the blog. Search to filter out using name of the article.
         </p>
-          <div className="relative w-full">
+          <div className="relative flex w-full">
             <input
               aria-label="Search articles"
               type="text"
               onChange={(e) => setSearchValue(e.target.value)}
               placeholder="Search articles"
-              className="block w-full px-4 py-2 text-gray-900 bg-white border border-gray-200 rounded-md dark:border-gray-900 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:text-gray-100"
+              className="block flex w-full px-4 py-2 text-gray-900 bg-white border border-gray-200 rounded-md dark:border-gray-900 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:text-gray-100"
             />
-            <Link class="flex items-center justify-center px-4 border-l" href="/tags" >
+          <Link class="flex items-center justify-center px-4 border-l" href="/tags" >
            <Image
            src="/static/images/tag.svg"
            alt="Tags"
