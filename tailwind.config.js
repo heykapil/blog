@@ -158,7 +158,7 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        sans: ['IBM Plex Sans', 'system-ui'],
+        sans: ['GTSuperDisplayRegular'],
         cansu: ['Cansu'],
       },
       gradientColorStops: {
