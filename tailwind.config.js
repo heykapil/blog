@@ -15,6 +15,10 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      backgroundImage:
+         {
+           'hero_pattern': "url('/static/images/diagonal-lines.svg)"
+         }
       keyframes: {
         shrink: {
           '0% , 100%': {
