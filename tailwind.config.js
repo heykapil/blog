@@ -158,7 +158,7 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        sans: ['GTSuperDisplayRegular', 'system-ui'],
+        sans: ['GTSuperDisplayRegular', 'sans-serif'],
         cansu: ['Cansu'],
       },
       gradientColorStops: {
