@@ -32,14 +32,14 @@ class MyDocument extends Document {
             type="font/woff"
             crossOrigin="anonymous"
           />
-          <link
+          {/*<link
             rel="preload"
             href="/font/GTSuperDisplay/GTSuperDisplayRegular.woff2"
             as="font"
             type="font/woff2"
             crossOrigin="anonymous"
           />
-           {/*  <link rel="preload" href="/font/league-mono/LeagueMono-Bold.woff2" as="font" type="font/woff2" crossOrigin='anonymous' />
+          <link rel="preload" href="/font/league-mono/LeagueMono-Bold.woff2" as="font" type="font/woff2" crossOrigin='anonymous' />
           <link rel="preload" href="/font/league-mono/LeagueMono-SemiBold.woff2" as="font" type="font/woff2" crossOrigin='anonymous' />
           <link rel="preload" href="/font/league-mono/LeagueMono-Regular.woff2" as="font" type="font/woff2" crossOrigin='anonymous' />
           <link rel="apple-touch-icon" sizes="76x76" href="/static/favicons/hat.png" />
