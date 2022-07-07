@@ -13,7 +13,7 @@ const LayoutWrapper = ({ children }) => {
   return (
     <>
       <MobileNav navShow={navShow} onToggleNav={onToggleNav} />
-      <header className="backdrop-filter trasition ease-in-out duration-100 overflow-x-hidden backdrop-blur supports-backdrop-blur:bg-white/50 py-3 sticky top-0 z-40 bg-white/30 dark:bg-dark/50 bg-opacity-50 bg-dpattern dark:bg-pattern">
+      <header className="backdrop-filter trasition ease-in-out overflow-x-hidden backdrop-blur supports-backdrop-blur:bg-white/50 py-3 sticky top-0 z-40 bg-white/30 dark:bg-dark/50 bg-opacity-50 bg-dpattern dark:bg-pattern">
         <div className="mx-auto max-w-3xl xl:max-w-5xl flex items-center justify-between px-3 xl:px-0">
           <div>
             <Link href="/" aria-label="Kapil's Blog">
