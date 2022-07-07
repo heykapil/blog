@@ -17,7 +17,7 @@ module.exports = {
     extend: {
       backgroundImage:
          {
-           'pattern': "url('/static/patterns/Aare.svg')",
+           'pattern': "url('/static/images/diagonal-lines.svg')",
            'dpattern': "url('/static/images/dark-diagonal.svg')"
          },
       keyframes: {
