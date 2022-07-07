@@ -59,18 +59,17 @@ class MyDocument extends Document {
           <meta name="theme-color" content="#000000" />
           <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
           <script src="/static/extra.js" />
-          {/*<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
           <link
-            href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;300;400;600;700;800&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap"
             rel="stylesheet"
           />
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
           <link
             href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"
             rel="stylesheet"
           />
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.3/katex.min.css" integrity="sha512-07YhC3P4/vS5HdgGuNAAeIxb5ee//efgRNo5AGdMtqFBUPYOdQG/sDK0Nl5qNq94kdEk/Pvu8pmN4GYUeucUkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+          {/*<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.3/katex.min.css" integrity="sha512-07YhC3P4/vS5HdgGuNAAeIxb5ee//efgRNo5AGdMtqFBUPYOdQG/sDK0Nl5qNq94kdEk/Pvu8pmN4GYUeucUkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
           */}
         </Head>
         <body className="antialiased text-black bg-white bg-dpattern dark:bg-dark dark:text-white dark:bg-pattern">
