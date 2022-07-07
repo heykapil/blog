@@ -17,8 +17,8 @@ module.exports = {
     extend: {
       backgroundImage:
          {
-           'hero_pattern': "url('/static/images/diagonal-lines.svg')"
-         }
+           'pattern': "url('/static/images/diagonal-lines.svg')"
+         },
       keyframes: {
         shrink: {
           '0% , 100%': {
@@ -157,7 +157,7 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        sans: ['IBM Plex Sans'],
+        sans: ['GBSuperDisplay', 'IBM Plex Sans'],
         cansu: ['Cansu'],
       },
       gradientColorStops: {
