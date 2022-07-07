@@ -32,6 +32,13 @@ class MyDocument extends Document {
             type="font/woff"
             crossOrigin="anonymous"
           />
+          <link
+            rel="preload"
+            href="/font/GTSuperDisplay/GTSuperDisplayRegular.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          />
            {/*  <link rel="preload" href="/font/league-mono/LeagueMono-Bold.woff2" as="font" type="font/woff2" crossOrigin='anonymous' />
           <link rel="preload" href="/font/league-mono/LeagueMono-SemiBold.woff2" as="font" type="font/woff2" crossOrigin='anonymous' />
           <link rel="preload" href="/font/league-mono/LeagueMono-Regular.woff2" as="font" type="font/woff2" crossOrigin='anonymous' />
@@ -59,7 +66,7 @@ class MyDocument extends Document {
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.3/katex.min.css" integrity="sha512-07YhC3P4/vS5HdgGuNAAeIxb5ee//efgRNo5AGdMtqFBUPYOdQG/sDK0Nl5qNq94kdEk/Pvu8pmN4GYUeucUkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
           */}
         </Head>
-        <body className="antialiased text-black bg-white dark:bg-dark dark:text-white">
+        <body className="antialiased text-black bg-white dark:bg-dark dark:text-white bg-hero_pattern">
           <Main />
           <NextScript />
         </body>
