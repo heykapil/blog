@@ -38,7 +38,7 @@ export default function Home({ posts }) {
         </div>
           <div className="xl:col-span-2 col-auto">
             <p
-              className={`mb-8 text-4xl leading-[60px] font-extrabold tracking-tight text-transparent bg-clip-text ${headingColorClass} md:text-7xl md:leading-[86px]`}
+              className={`mb-8 text-4xl leading-[60px] font-ibm font-extrabold tracking-tight text-transparent bg-clip-text ${headingColorClass} md:text-7xl md:leading-[86px]`}
             >
               Hello, there! <i className="twa twa-waving-hand"></i>
             </p>

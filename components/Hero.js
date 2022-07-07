@@ -1,6 +1,6 @@
 export default function Hero() {
     return (
-      <div className="flex flex-col justify-around w-full h-content sm:h-content-sm">
+      <div className="flex font-ibm flex-col justify-around w-full h-content sm:h-content-sm">
         <h1 className="my-28 sm:my-10 text-center select-none text-6xl sm:text-8.5xl leading-none tracking-tightest font-extrabold">
           <span
             data-content="Blog."
