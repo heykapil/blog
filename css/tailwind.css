@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'GBSuperDisplay';
+  font-family: 'GTSuperDisplay';
   font-style: normal;
   font-weight: normal;
   text-rendering: optimizeLegibility;
-  src: url(/font/GBSuperDisplay/GBSuperDisplayRegular.woff2) format('woff2');
+  src: url(/font/GTSuperDisplay/GTSuperDisplayRegular.woff2) format('woff2');
 }
 @font-face {
   font-family: 'IBM Plex Sans';
