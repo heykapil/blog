@@ -17,7 +17,7 @@ module.exports = {
     extend: {
       backgroundImage:
          {
-           'hero_pattern': "url('/static/images/diagonal-lines.svg)"
+           'hero_pattern': "url('/static/images/diagonal-lines.svg')"
          }
       keyframes: {
         shrink: {
