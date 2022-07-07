@@ -158,7 +158,7 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        sans: ['GTSuperDisplayRegular', 'Inter', 'system-ui','sans-serif'],
+        sans: ['Inter', 'system-ui','sans-serif'],
         cansu: ['Cansu'],
         mono: ['JetBrains Mono'],
       },
