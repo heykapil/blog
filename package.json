@@ -19,6 +19,7 @@
     "@tailwindcss/typography": "^0.5.1",
     "antd": "^4.19.5",
     "autoprefixer": "^10.2.5",
+    "date-fns": "^2.28.0",
     "esbuild": "^0.12.16",
     "gray-matter": "^4.0.2",
     "image-size": "1.0.0",
@@ -76,6 +77,8 @@
     "remark-frontmatter": "3.0.0",
     "remark-parse": "9.0.0",
     "remark-stringify": "9.0.1",
+    "socket.io": "^4.4.0",
+    "socket.io-client": "^4.4.0",
     "unified": "9.2.1",
     "unist-util-visit": "2.0.3"
   },
