@@ -89,7 +89,7 @@ export default function Home({ posts }) {
         <p className="text-gray-600 dark:text-gray-400 mb-4">
           You can find the latest blog articles written by me arranged date wise.
         </p>
-        {/*<ul className="divide-y divide-gray-200 dark:divide-gray-700">
+        <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
             const { slug, date, title, summary, tags } = frontMatter
@@ -139,8 +139,8 @@ export default function Home({ posts }) {
               </li>
             )
           })}
-        </ul> */}
-        <ul className="flex flex-col gap-10 text-justify dark:text-gray-200 dark:border-gray-700 md:flex-row">
+        </ul> 
+       {/* <ul className="flex flex-col gap-10 text-justify dark:text-gray-200 dark:border-gray-700 md:flex-row">
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter, index) => {
             const { slug, date, title, summary, tags, readTime } = frontMatter
@@ -218,7 +218,7 @@ fill="currentColor"><path d="M15,3C8.373,3,3,8.373,3,15c0,6.627,5.373,12,12,12s1
               </Link>
             )
           })}
-        </ul>
+        </ul> */}
         {posts.length > MAX_DISPLAY && (
           <div className="flex justify-end text-base font-medium leading-6">
             <Link
