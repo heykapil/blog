@@ -53,12 +53,14 @@
     "smoothscroll-polyfill": "^0.4.4",
     "swr": "^1.0.0",
     "tailwindcss": "^3.0.18",
-    "typed.js": "^2.0.12"
+    "typed.js": "^2.0.12",
+    "unist-util-visit": "^4.0.0",
+    "zod": "^3.12.0"
   },
   "devDependencies": {
-    "@next/bundle-analyzer": "11.0.1",
-    "@next/eslint-plugin-next": "^12.1.5",
-    "@svgr/webpack": "^6.1.2",
+    "@next/bundle-analyzer": "12.1.4",
+    "@next/eslint-plugin-next": "12.1.4",
+    "@svgr/webpack": "^6.1.0",
     "cross-env": "^7.0.3",
     "dedent": "^0.7.0",
     "eslint": "^8.13.0",
@@ -79,8 +81,7 @@
     "remark-stringify": "9.0.1",
     "socket.io": "^4.4.0",
     "socket.io-client": "^4.4.0",
-    "unified": "9.2.1",
-    "unist-util-visit": "2.0.3"
+    "unified": "9.2.1"
   },
   "lint-staged": {
     "*.+(js|jsx|ts|tsx)": [
