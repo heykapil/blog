@@ -121,9 +121,3 @@ html.lightbox-loading * {
 .prose *:hover > .anchor {
   @apply visible;
 }
-
-canvas{
-  display: grid;
-  grid-template-columns: 1fr;
-  background-color: #000; 
-}

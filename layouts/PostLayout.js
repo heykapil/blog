@@ -50,12 +50,11 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, pag
             {` • `}
             <ViewCounter className="text-sm" slug={slug} />
           </p>
-          </div>
-        <canvas>
-        </canvas>
+        </div>
         <div className="w-full mt-4 prose dark:prose-dark max-w-none">
           {children}
         </div>
+        <canvas></canvas>
         {/* <div className="text-sm text-gray-700 dark:text-gray-300">
           <a
             href={postUrl}
