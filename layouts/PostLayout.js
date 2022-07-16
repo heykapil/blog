@@ -52,10 +52,10 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, pag
           </p>
           </div>
         <canvas>
+        </canvas>
         <div className="w-full mt-4 prose dark:prose-dark max-w-none">
           {children}
         </div>
-        </canvas>
         {/* <div className="text-sm text-gray-700 dark:text-gray-300">
           <a
             href={postUrl}
